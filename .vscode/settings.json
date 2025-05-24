@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.hover.enabled": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.nodePath": "/app/node_modules"
+}

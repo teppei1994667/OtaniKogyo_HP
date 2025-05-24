@@ -1,0 +1,24 @@
+{
+  "env": {
+    // Jest のグローバル変数を許可
+    "jest": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/warnings",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "next/core-web-vitals",
+    // Jestの推奨設定を適用
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  // Jestプラグインを追加
+  "plugins": ["jest"]
+}
