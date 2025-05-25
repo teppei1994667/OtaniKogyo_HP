@@ -13,9 +13,7 @@ import { useEffect, useState } from "react";
 import styles from "./styles/MenuButton.module.css";
 
 export const Menu = () => {
-  const [windowWidth, setWindowWidth] = useState<number>(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
+  const [windowWidth, setWindowWidth] = useState<number>(0);
   const [isDrawerOpend, setIsDrawerOpend] = useState<boolean>(false);
 
   const handleMenuButtonOnClick = () => {
@@ -27,6 +25,7 @@ export const Menu = () => {
   };
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -79,18 +78,15 @@ export const Menu = () => {
           </Grid>
         </Grid>
       ) : (
-        <IconButton>
-          <button
+        <>
+          <IconButton
             className={styles.hamburger}
-            aria-label="メニュー"
-            aria-controls="nav-menu"
-            aria-expanded="false"
             onClick={handleMenuButtonOnClick}
           >
             <span className={styles.hamburger__line}></span>
             <span className={styles.hamburger__line}></span>
             <span className={styles.hamburger__line}></span>
-          </button>
+          </IconButton>
           <Drawer
             className="text-center"
             anchor="right"
@@ -99,7 +95,7 @@ export const Menu = () => {
           >
             {drawerList}
           </Drawer>
-        </IconButton>
+        </>
       )}
     </>
   );
