@@ -11,7 +11,7 @@ export const Header = () => {
         container
         justifyContent="space-between"
         alignItems="center"
-        className="bg-white p-4 shadow-md"
+        className="fixed top-0 left-0 w-full z-50 bg-white p-4 shadow-md"
       >
         <Grid>
           <Grid container alignItems="center">
