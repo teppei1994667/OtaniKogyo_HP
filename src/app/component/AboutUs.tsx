@@ -5,7 +5,7 @@ export const AboutUs = () => {
     <>
       <div className="relative">
         <Image
-          src="/about us.png"
+          src="/about_us.png"
           alt="about us"
           width={1508}
           height={289}
@@ -37,8 +37,8 @@ export const AboutUs = () => {
           <Image
             src="/about_us_message.png"
             alt="about_us_message"
-            width={193}
-            height={428}
+            width={470}
+            height={894}
             layout="responsive"
           />
         </div>
