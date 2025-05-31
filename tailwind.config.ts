@@ -12,6 +12,23 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      height: {
+        "120": "30rem", // 480px
+        "144": "36rem", // 576px
+        "192": "48rem", // 768px
+        "240": "60rem", // 960px
+        "288": "72rem", // 1152px
+      },
+      width: {
+        "120": "30rem", // 480px
+        "144": "36rem", // 576px
+        "192": "48rem", // 768px
+        "240": "60rem", // 960px
+        "288": "72rem", // 1152px
+      },
+      fontSize: {
+        xxs: "0.625rem", // 10px
+      },
     },
   },
   plugins: [],
