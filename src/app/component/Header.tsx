@@ -1,6 +1,8 @@
+"use client";
+
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
+import { Menu } from "./Menu";
 
 export const Header = () => {
   return (
@@ -9,7 +11,7 @@ export const Header = () => {
         container
         justifyContent="space-between"
         alignItems="center"
-        className="bg-white p-4 shadow-md"
+        className="fixed top-0 left-0 w-full z-50 bg-white p-4 shadow-md"
       >
         <Grid>
           <Grid container alignItems="center">
@@ -26,26 +28,7 @@ export const Header = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container>
-          <Grid>
-            <Link href="">Home</Link>
-          </Grid>
-          <Grid className="ml-10">
-            <Link href="">事業内容</Link>
-          </Grid>
-          <Grid className="ml-10">
-            <Link href="">実績</Link>
-          </Grid>
-          <Grid className="ml-10">
-            <Link href="">会社概要</Link>
-          </Grid>
-          <Grid className="ml-10">
-            <Link href="">採用情報</Link>
-          </Grid>
-          <Grid className="ml-10 mr-10">
-            <Link href="">お問い合わせ</Link>
-          </Grid>
-        </Grid>
+        <Menu />
       </Grid>
     </>
   );
