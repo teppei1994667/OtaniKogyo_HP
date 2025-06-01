@@ -16,10 +16,10 @@ export const MainImage = () => {
   return (
     <div className="relative">
       <Image
-        src="/メインイメージサンプル.webp"
+        src="/main_image.jpg"
         alt="会社ロゴ"
-        width={728}
-        height={484}
+        width={4032}
+        height={3024}
         layout="responsive"
       />
       <div className="absolute inset-0 flex items-center justify-center">
