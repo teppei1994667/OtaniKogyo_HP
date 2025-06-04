@@ -40,7 +40,7 @@ export const News = () => {
         <Grid
           key={news.id}
           container
-          className="mt-4 mr-8 lg:mr-16 xl:mr-24 ml-8 lg:ml-16 xl:ml-24 border-b border-dashed border-gray-900"
+          className="items-center mt-4 mr-8 lg:mr-16 xl:mr-24 ml-8 lg:ml-16 xl:ml-24 border-b border-dashed border-gray-900"
         >
           <Grid className="ml-2 text-base xl:text-lg">
             <p>{news.date}</p>
@@ -49,7 +49,7 @@ export const News = () => {
             <p>{news.title}</p>
           </Grid>
           {index === 0 ? (
-            <Grid className="w-6 mt-1 ml-4">
+            <Grid className="w-6 ml-4">
               <Image
                 src="/topics.jpg"
                 alt="トピックス"

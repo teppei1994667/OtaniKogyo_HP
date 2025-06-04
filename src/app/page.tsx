@@ -1,4 +1,5 @@
 import { AboutUs } from "./component/AboutUs";
+import { Contact } from "./component/Contact";
 import { MainImage } from "./component/MainImage";
 import { News } from "./component/News";
 import { OurService } from "./component/OurService";
@@ -12,6 +13,7 @@ export default function Home() {
       <OurService />
       <OurWorks />
       <News />
+      <Contact />
     </>
   );
 }
