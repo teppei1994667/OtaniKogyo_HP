@@ -30,7 +30,7 @@ export const OurWorks = () => {
       <div className="absolute w-5/6 h-28 sm:h-36 md:h-48 lg:h-52 xl:h-60 mt-2 primary-bg-color opacity-20"></div>
       <Grid
         container
-        className="relative justify-between top-10 lg:top-20 lg:ml-12 h-36"
+        className="relative justify-between top-10 lg:top-20 lg:ml-12 h-36 sm:h-48 md:h-60 lg:h-72 xl:h-96"
       >
         <Grid className="w-1/4 lg:w-1/5 ml-12 lg:ml-48">
           <Image

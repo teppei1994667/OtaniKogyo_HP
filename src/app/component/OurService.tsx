@@ -18,7 +18,7 @@ export const OurService = () => {
             事業内容
           </h1>
         </Grid>
-        <Grid className="mr-5">
+        <Grid className="mr-8">
           <Link
             href=""
             className="text-2xl md:text-5xl font-thin text-gray-400 hover:text-gray-50 transition-colors duration-300"
