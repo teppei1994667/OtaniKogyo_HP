@@ -12,7 +12,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./styles/MenuButton.module.css";
 
-export const Menu = () => {
+export const Menu = ({
+  drowerMenuVisible = true,
+}: {
+  drowerMenuVisible?: boolean;
+}) => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [isDrawerOpend, setIsDrawerOpend] = useState<boolean>(false);
 
@@ -56,7 +60,7 @@ export const Menu = () => {
 
   return (
     <>
-      {windowWidth > 850 ? (
+      {windowWidth > 1024 ? (
         <Grid container>
           <Grid>
             <Link href="">Home</Link>
@@ -77,7 +81,7 @@ export const Menu = () => {
             <Link href="">お問い合わせ</Link>
           </Grid>
         </Grid>
-      ) : (
+      ) : drowerMenuVisible ? (
         <>
           <IconButton
             className={styles.hamburger}
@@ -96,7 +100,7 @@ export const Menu = () => {
             {drawerList}
           </Drawer>
         </>
-      )}
+      ) : null}
     </>
   );
 };

@@ -16,15 +16,15 @@ export const MainImage = () => {
   return (
     <div className="relative">
       <Image
-        src="/メインイメージサンプル.webp"
+        src="/main_image.jpg"
         alt="会社ロゴ"
-        width={728}
-        height={484}
+        width={4032}
+        height={3024}
         layout="responsive"
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <h1
-          className={`text-white text-2xl md:text-4xl font-bold text-center p-4 rounded transition-opacity duration-1000 ${
+          className={`text-white text-2xl md:text-6xl font-bold text-center p-4 rounded transition-opacity duration-1000 ${
             isShowMainText ? "opacity-100" : "opacity-0"
           }`}
         >

@@ -29,6 +29,10 @@ export default {
       fontSize: {
         xxs: "0.625rem", // 10px
       },
+      backgroundColor: {
+        contact: "#D9D9D9",
+        footer: "#434343",
+      },
     },
   },
   plugins: [],
