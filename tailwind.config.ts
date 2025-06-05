@@ -31,6 +31,7 @@ export default {
       },
       backgroundColor: {
         contact: "#D9D9D9",
+        footer: "#434343",
       },
     },
   },
