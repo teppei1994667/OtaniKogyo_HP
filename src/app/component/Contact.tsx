@@ -27,7 +27,7 @@ export const Contact = () => {
         </Grid>
         <Grid
           container
-          className="justify-between items-center mt-4 ml-8 sm:ml-28 md:ml-48 lg:ml-64 xl:ml-72 2xl:ml-96 mr-8 sm:mr-28 md:mr-48 lg:mr-64 xl:mr-72 2xl:mr-95 pb-4"
+          className="justify-between items-center mt-4 ml-8 sm:ml-28 md:ml-48 lg:ml-64 xl:ml-72 2xl:ml-96 mr-8 sm:mr-28 md:mr-48 pb-4"
         >
           <Grid>
             <h1 className="text-sm md:text-xl xl:text-2xl whitespace-pre-line text-center">
