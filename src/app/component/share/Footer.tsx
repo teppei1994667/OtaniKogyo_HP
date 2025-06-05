@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import { Menu } from "./Menu";
+import { Menu } from "../Top/Menu";
 
 export const Footer = () => {
   return (
