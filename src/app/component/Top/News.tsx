@@ -1,7 +1,7 @@
+import { AllNewsList, NewsType } from "@/app/NewsList";
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { AllNewsList, NewsType } from "../NewsList";
 
 export const News = () => {
   const newsList = AllNewsList.sort(

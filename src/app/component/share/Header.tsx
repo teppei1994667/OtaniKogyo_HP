@@ -2,7 +2,7 @@
 
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import { Menu } from "../Top/Menu";
+import { Menu } from "./Menu";
 
 export const Header = () => {
   return (
