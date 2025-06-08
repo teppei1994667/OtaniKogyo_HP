@@ -9,7 +9,7 @@ import { SplashScreen } from "./component/Top/SplashScreen";
 export default function Home() {
   return (
     <>
-      {/* <SplashScreen /> */}
+      <SplashScreen />
       <MainImage />
       <AboutUs />
       <OurService />
