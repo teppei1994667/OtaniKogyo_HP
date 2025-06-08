@@ -1,7 +1,8 @@
+import { AllNewsList, NewsType } from "@/app/NewsList";
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { AllNewsList, NewsType } from "../NewsList";
+import { Title } from "../share/Title";
 
 export const News = () => {
   const newsList = AllNewsList.sort(
@@ -23,9 +24,10 @@ export const News = () => {
       </Grid>
       <Grid container className="mt-4 justify-end">
         <Grid className="mr-5">
-          <h1 className="text-2xl md:text-5xl font-bold pl-10 primary-color">
-            お知らせ
-          </h1>
+          <Title
+            title="お知らせ"
+            childClassName="text-2xl md:text-5xl font-bold pl-10"
+          />
         </Grid>
         <Grid className="mr-8">
           <Link
