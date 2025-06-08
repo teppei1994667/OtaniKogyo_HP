@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../share/Title";
+import { AnimationImage } from "../share/AnimationImage";
 
 export const OurService = () => {
   return (
@@ -29,7 +30,7 @@ export const OurService = () => {
       </Grid>
       <Grid container className="-mt-2 item-bottom justify-end">
         <Grid className="w-3/5">
-          <Image
+          <AnimationImage
             src="/asbestos1.png"
             alt="アスベスト事業"
             width={1651}
@@ -47,7 +48,7 @@ export const OurService = () => {
       </Grid>
       <Grid container className="mt-2 item-bottom">
         <Grid className="w-3/5">
-          <Image
+          <AnimationImage
             src="/dioxin1.png"
             alt="ダイオキシン事業"
             width={1633}
@@ -65,7 +66,7 @@ export const OurService = () => {
       </Grid>
       <Grid container className="mt-2 item-bottom justify-end">
         <Grid className="w-3/5">
-          <Image
+          <AnimationImage
             src="/kaitai1.png"
             alt="解体・仮説足場・外構工事事業"
             width={1633}

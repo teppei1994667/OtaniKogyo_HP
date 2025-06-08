@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Title } from "../share/Title";
+import { AnimationImage } from "../share/AnimationImage";
 
 export const AboutUs = () => {
   return (
@@ -25,7 +26,7 @@ export const AboutUs = () => {
       </div>
       <div className="relative h-72 sm:h-120 md:h-144 lg:h-192 xl:h-240 mt-6">
         <div className="absolute w-1/2 max-w-6xl mt-8 xl:mt-16 z-10">
-          <Image
+          <AnimationImage
             src="/about_us_image.png"
             alt="大谷工業について"
             width={796}
@@ -35,7 +36,7 @@ export const AboutUs = () => {
         </div>
         <div className="absolute w-3/4 h-5/6 primary-bg-color opacity-20 top-0 right-0 "></div>
         <div className="absolute w-1/6 xl:w-64 z-10 -top-6 right-8 sm:right-12 md:right-24 lg:right-36 xl:right-48 ">
-          <Image
+          <AnimationImage
             src="/about_us_message.png"
             alt="about_us_message"
             width={470}

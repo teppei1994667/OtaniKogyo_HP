@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../share/Title";
+import { AnimationImage } from "../share/AnimationImage";
 
 export const OurWorks = () => {
   return (
@@ -35,7 +36,7 @@ export const OurWorks = () => {
         className="relative justify-between top-10 lg:top-20 lg:ml-12 h-36 sm:h-48 md:h-60 lg:h-72 xl:h-96"
       >
         <Grid className="w-1/4 lg:w-1/5 ml-12 lg:ml-48">
-          <Image
+          <AnimationImage
             src="/jiseki1.png"
             alt="実績1"
             width={1280}
@@ -44,7 +45,7 @@ export const OurWorks = () => {
           />
         </Grid>
         <Grid className="w-1/4 lg:w-1/5">
-          <Image
+          <AnimationImage
             src="/jiseki2.png"
             alt="実績1"
             width={1280}
@@ -53,7 +54,7 @@ export const OurWorks = () => {
           />
         </Grid>
         <Grid className="w-1/4 lg:w-1/5 mr-4 lg:mr-14">
-          <Image
+          <AnimationImage
             src="/jiseki3.png"
             alt="実績1"
             width={1280}
