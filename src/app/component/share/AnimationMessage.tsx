@@ -13,24 +13,26 @@ type AnimationMessageProps = {
 
 export const AnimationMessage = (props: AnimationMessageProps) => {
   const { message, absolutelyShow, parentClassName, childClassName } = props;
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 1,
   });
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
-  return windowWidth >= 640 || absolutelyShow ? (
+  return windowWidth == null || windowWidth >= 640 || absolutelyShow ? (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
