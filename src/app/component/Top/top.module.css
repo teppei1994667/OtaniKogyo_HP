@@ -1,0 +1,51 @@
+/* スプラッシュスクリーンのスタイル */
+.splash_screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 50;
+  animation: splashScreenFadeOut 2s ease-in-out forwards;
+}
+
+/* フェードインとフェードアウトのアニメーション */
+@keyframes splashScreenFadeOut {
+  10% {
+    opacity: 1; /* フェードイン */
+  }
+  70% {
+    opacity: 1; /* 表示状態を維持 */
+  }
+  100% {
+    opacity: 0; /* フェードアウト */
+  }
+}
+
+/* スプラッシュスクリーンのスタイル */
+.splash_screen_logo_image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 50;
+  animation: logoFadeOut 2s ease-in-out forwards;
+}
+
+/* フェードインとフェードアウトのアニメーション */
+@keyframes logoFadeOut {
+  0% {
+    opacity: 0; /* 初期状態: 非表示 */
+  }
+  70% {
+    opacity: 1; /* 表示状態を維持 */
+  }
+  100% {
+    opacity: 0; /* フェードアウト */
+  }
+}
