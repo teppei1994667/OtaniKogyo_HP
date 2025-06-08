@@ -25,7 +25,6 @@ export const AnimationImage = (props: AnimationImageProps) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8 }}
-      // className="absolute w-1/2 max-w-6xl mt-8 xl:mt-16 z-10"
     >
       <Image
         src={src}

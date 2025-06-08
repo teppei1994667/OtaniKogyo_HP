@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type TitleProps = {
   title: string;
@@ -9,40 +10,27 @@ type TitleProps = {
 };
 
 export const Title = (props: TitleProps) => {
-  const [showTitle, setShowTitle] = useState(false);
-  const titleRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    // IntersectionObserverを使用して、要素がビューポートに入ったときにタイトルを表示
-    const currentRef = titleRef.current;
-    const observer = new window.IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setShowTitle(true);
-        });
-      },
-      { threshold: 0.5 }
-    );
-    if (currentRef) observer.observe(currentRef);
-    return () => {
-      if (currentRef) observer.unobserve(currentRef);
-    };
-  }, []);
+  const { title, parentClassName, childClassName } = props;
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   return (
-    <div
-      ref={titleRef}
-      className={`transition-all duration-1000 ${
-        showTitle ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      } ${props.parentClassName ? props.parentClassName : ""}`}
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8 }}
+      className={`${parentClassName ? parentClassName : ""}`}
     >
       <h1
         className={`font-bold primary-color ${
-          props.childClassName ? props.childClassName : ""
+          childClassName ? childClassName : ""
         }`}
       >
-        {props.title}
+        {title}
       </h1>
-    </div>
+    </motion.div>
   );
 };
