@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Title } from "../share/Title";
 import { AnimationImage } from "../share/AnimationImage";
 import { AnimationMessage } from "../share/AnimationMessage";
+import { AnimationSubTitle } from "../share/AnimationSubTitle";
 
 export const OurService = () => {
   return (
@@ -51,9 +52,7 @@ export const OurService = () => {
       </Grid>
       <Grid container className="-mt-8">
         <Grid className="ml-12 sm:ml-24 md:ml-36 lg:ml-48 xl:ml-60">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold primary-color whitespace-pre-line">
-            {`Asbestos\nconstruction work`}
-          </h1>
+          <AnimationSubTitle subTitle={`Asbestos\nconstruction work`} />
         </Grid>
       </Grid>
       <Grid container className="mt-2 item-bottom" alignItems="center">
@@ -74,9 +73,10 @@ export const OurService = () => {
       </Grid>
       <Grid container className="-mt-8 justify-end">
         <Grid className="mr-16 sm:mr-24 md:mr-36 lg:mr-48 xl:mr-60">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold primary-color whitespace-pre-line text-right">
-            {`Dioxin\ncountermeasure\nconstruction`}
-          </h1>
+          <AnimationSubTitle
+            subTitle={`Dioxin\ncountermeasure\nconstruction`}
+            childClassName="text-right"
+          />
         </Grid>
       </Grid>
       <Grid
@@ -101,9 +101,9 @@ export const OurService = () => {
       </Grid>
       <Grid container className="-mt-8">
         <Grid className="ml-12 sm:ml-24 md:ml-36 lg:ml-48 xl:ml-60">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold primary-color whitespace-pre-line">
-            {`Demolition\ntemporary scaffolding\nexterior construction`}
-          </h1>
+          <AnimationSubTitle
+            subTitle={`Demolition\ntemporary scaffolding\nexterior construction`}
+          />
         </Grid>
       </Grid>
     </>
