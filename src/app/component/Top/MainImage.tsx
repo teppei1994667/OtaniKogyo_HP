@@ -9,7 +9,7 @@ export const MainImage = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsShowMainText(true);
-    }, 500); // 0.5秒後に表示
+    }, 2200); // 2.2秒後に表示
 
     return () => clearTimeout(timeout);
   }, []);
