@@ -35,7 +35,7 @@ export const AboutUs = () => {
             layout="responsive"
           />
         </div>
-        <div className="absolute w-3/4 h-5/6 primary-bg-color opacity-20 top-0 right-0 "></div>
+        <div className="absolute w-3/4 h-5/6 bg-blue-100 top-0 right-0 "></div>
         <div className="absolute w-1/6 xl:w-64 z-10 -top-6 right-8 sm:right-12 md:right-24 lg:right-36 xl:right-48 ">
           <AnimationImage
             src="/about_us_message.png"

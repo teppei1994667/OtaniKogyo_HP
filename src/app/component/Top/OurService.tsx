@@ -50,7 +50,7 @@ export const OurService = () => {
           />
         </Grid>
       </Grid>
-      <Grid container className="-mt-8">
+      <Grid container className="-mt-8 bg-blue-100 md:py-6">
         <Grid className="ml-12 sm:ml-24 md:ml-36 lg:ml-48 xl:ml-60">
           <AnimationSubTitle subTitle={`Asbestos\nconstruction work`} />
         </Grid>
@@ -71,7 +71,7 @@ export const OurService = () => {
           />
         </Grid>
       </Grid>
-      <Grid container className="-mt-8 justify-end">
+      <Grid container className="-mt-8 justify-end bg-blue-100 md:py-6">
         <Grid className="mr-16 sm:mr-24 md:mr-36 lg:mr-48 xl:mr-60">
           <AnimationSubTitle
             subTitle={`Dioxin\ncountermeasure\nconstruction`}
@@ -99,7 +99,7 @@ export const OurService = () => {
           />
         </Grid>
       </Grid>
-      <Grid container className="-mt-8">
+      <Grid container className="-mt-8 bg-blue-100 md:py-6">
         <Grid className="ml-12 sm:ml-24 md:ml-36 lg:ml-48 xl:ml-60">
           <AnimationSubTitle
             subTitle={`Demolition\ntemporary scaffolding\nexterior construction`}
