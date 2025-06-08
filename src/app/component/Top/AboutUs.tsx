@@ -46,9 +46,9 @@ export const AboutUs = () => {
           />
         </div>
         <AnimationMessage
-          message={`大谷工業は、\n地域社会に密着した企業として、\n常にお客様のニーズに応えることを\n目指しています。\n私たちの使命は、\n品質と信頼性を兼ね備えた製品と\nサービスを提供し、\nお客様の期待を超えることです。`}
+          message={`あああああ、\nあああああああああああああああ、\nああああああああああああああああああ\nあああああああああああああ。\nあああああああああああ、\nああああああああああああああああ\nああああああああああ\nあああああああああああああああ。`}
+          absolutelyShow={true}
           parentClassName="absolute w-52 sm:w-72 md:w-80 lg:w-120 xl:w-144 h-28 sm:h-44 md:h-52 lg:h-64 xl:h-96 bg-white z-10 bottom-0 md:bottom-14 xl:bottom-4 right-4 sm:right-10 xl:right-32 p-2 xl:p-8"
-          childClassName="text-xxs sm:text-sm md:text-base lg:text-xl whitespace-pre-line text-center leading-tight font-semibold"
         />
       </div>
     </>

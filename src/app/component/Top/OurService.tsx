@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../share/Title";
 import { AnimationImage } from "../share/AnimationImage";
+import { AnimationMessage } from "../share/AnimationMessage";
 
 export const OurService = () => {
   return (
@@ -28,7 +29,16 @@ export const OurService = () => {
           >{`>>`}</Link>
         </Grid>
       </Grid>
-      <Grid container className="-mt-2 item-bottom justify-end">
+      <Grid
+        container
+        className="-mt-2 item-bottom justify-end"
+        alignItems="center"
+      >
+        <Grid className="w-2/5">
+          <AnimationMessage
+            message={`いいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいいいいいい\nいいいいいいいいいいいいいいいいいいいいいいいいいい`}
+          />
+        </Grid>
         <Grid className="w-3/5">
           <AnimationImage
             src="/asbestos1.png"
@@ -46,7 +56,7 @@ export const OurService = () => {
           </h1>
         </Grid>
       </Grid>
-      <Grid container className="mt-2 item-bottom">
+      <Grid container className="mt-2 item-bottom" alignItems="center">
         <Grid className="w-3/5">
           <AnimationImage
             src="/dioxin1.png"
@@ -54,6 +64,11 @@ export const OurService = () => {
             width={1633}
             height={1288}
             layout="responsive"
+          />
+        </Grid>
+        <Grid className="w-2/5">
+          <AnimationMessage
+            message={`うううううううううううううううう\nうううううううううううううううううううううううううううう\nうううううううううううううううううううううううううううう\nうううううううううううううううううううううううううううう\nううううううううううううううううううううううううううううう\nううううううううううううううううううううううううう\nううううううううううううう`}
           />
         </Grid>
       </Grid>
@@ -64,7 +79,16 @@ export const OurService = () => {
           </h1>
         </Grid>
       </Grid>
-      <Grid container className="mt-2 item-bottom justify-end">
+      <Grid
+        container
+        className="mt-2 item-bottom justify-end"
+        alignItems="center"
+      >
+        <Grid className="w-2/5">
+          <AnimationMessage
+            message={`ええええええええええええええええええ\nえええええええええええええええええええええええええ\nええええええええええええええええええええええ\nえええええええええええええええええええええええ\nえええええええええええええええ\nええええええええええええええええええええええ\nええええええええええええええええええええ`}
+          />
+        </Grid>
         <Grid className="w-3/5">
           <AnimationImage
             src="/kaitai1.png"
