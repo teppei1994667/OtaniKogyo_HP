@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { Title } from "../share/Title";
 
 export const OurService = () => {
   return (
@@ -14,9 +15,10 @@ export const OurService = () => {
       />
       <Grid container className="mt-4 item-bottom justify-end">
         <Grid className="mr-5">
-          <h1 className="text-2xl md:text-5xl font-bold pl-10 primary-color">
-            事業内容
-          </h1>
+          <Title
+            title="事業内容"
+            childClassName="text-2xl md:text-5xl font-bold pl-10"
+          />
         </Grid>
         <Grid className="mr-8">
           <Link

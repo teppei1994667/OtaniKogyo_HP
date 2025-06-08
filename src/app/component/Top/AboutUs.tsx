@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Title } from "../share/Title";
 
 export const AboutUs = () => {
   return (
@@ -11,11 +12,11 @@ export const AboutUs = () => {
           height={289}
           layout="responsive"
         />
-        <div className="absolute bottom-0 left-0 item-bottom">
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold pl-10 primary-color">
-            About Us
-          </h1>
-        </div>
+        <Title
+          title="About Us"
+          parentClassName="absolute bottom-0 left-0 item-bottom"
+          childClassName="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pl-10"
+        />
       </div>
       <div className="pl-12 md:pl-12 lg:pl-14">
         <h1 className="xl:text-2xl md:text-xl sm:text-base text-sm font-bold primary-color">

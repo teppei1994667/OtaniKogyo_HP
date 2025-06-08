@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { Title } from "../share/Title";
 
 export const OurWorks = () => {
   return (
@@ -16,9 +17,10 @@ export const OurWorks = () => {
       </div>
       <Grid container className="mt-4 mr-4 item-bottom">
         <Grid className="mr-5">
-          <h1 className="text-2xl md:text-5xl font-bold pl-10 primary-color">
-            施工実績
-          </h1>
+          <Title
+            title="施工実績"
+            childClassName="text-2xl md:text-5xl font-bold pl-10"
+          />
         </Grid>
         <Grid className="mr-5">
           <Link
