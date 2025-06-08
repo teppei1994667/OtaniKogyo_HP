@@ -48,7 +48,8 @@ export const AboutUs = () => {
         <AnimationMessage
           message={`あああああ、\nあああああああああああああああ、\nああああああああああああああああああ\nあああああああああああああ。\nあああああああああああ、\nああああああああああああああああ\nああああああああああ\nあああああああああああああああ。`}
           absolutelyShow={true}
-          parentClassName="absolute w-52 sm:w-72 md:w-80 lg:w-120 xl:w-144 h-28 sm:h-44 md:h-52 lg:h-64 xl:h-96 bg-white z-10 bottom-0 md:bottom-14 xl:bottom-4 right-4 sm:right-10 xl:right-32 p-2 xl:p-8"
+          parentClassName="absolute w-52 sm:w-72 md:w-80 lg:w-120 xl:w-144 h-28 sm:h-44 md:h-52 lg:h-64 xl:h-96 
+                           bg-white z-10 bottom-0 md:bottom-14 xl:bottom-4 right-4 sm:right-10 xl:right-32 p-2 xl:p-8"
         />
       </div>
     </>
