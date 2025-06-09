@@ -42,7 +42,7 @@ export const News = () => {
         <Grid
           key={news.id}
           container
-          className="items-center mt-4 mr-8 lg:mr-16 xl:mr-24 ml-8 lg:ml-16 xl:ml-24 border-b border-dashed border-gray-900"
+          className="items-center mt-4 mx-8 lg:mx-16 xl:mx-24 border-b border-dashed border-gray-900"
         >
           <Grid className="ml-2 text-base xl:text-lg">
             <p>{news.date}</p>
