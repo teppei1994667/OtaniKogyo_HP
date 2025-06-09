@@ -13,6 +13,7 @@ export const AboutUs = () => {
           width={1508}
           height={289}
           layout="responsive"
+          className="opacity-15"
         />
         <Title
           title="About Us"
