@@ -63,21 +63,23 @@ export const Menu = ({
       {windowWidth > 1024 ? (
         <Grid container>
           <Grid>
-            <Link href="">Home</Link>
+            <Link href="/" className="hover:text-blue-300">
+              Home
+            </Link>
           </Grid>
-          <Grid className="ml-10">
+          <Grid className="ml-10 hover:text-blue-300">
             <Link href="">事業内容</Link>
           </Grid>
-          <Grid className="ml-10">
+          <Grid className="ml-10 hover:text-blue-300">
             <Link href="">実績</Link>
           </Grid>
-          <Grid className="ml-10">
+          <Grid className="ml-10 hover:text-blue-300">
             <Link href="">会社概要</Link>
           </Grid>
-          <Grid className="ml-10">
+          <Grid className="ml-10 hover:text-blue-300">
             <Link href="">採用情報</Link>
           </Grid>
-          <Grid className="ml-10 mr-10">
+          <Grid className="mx-10 hover:text-blue-300">
             <Link href="">お問い合わせ</Link>
           </Grid>
         </Grid>
