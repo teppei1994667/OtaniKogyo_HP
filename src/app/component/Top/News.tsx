@@ -15,21 +15,21 @@ export const News = () => {
         <Grid className="w-1/2">
           <Image
             src="/news.png"
-            alt="事業内容"
+            alt="news"
             width={1512}
             height={245}
             layout="responsive"
           />
         </Grid>
       </Grid>
-      <Grid container className="mt-4 justify-end">
-        <Grid className="mr-5">
+      <Grid container className="mt-2 sm:mt-4 justify-end">
+        <Grid className="mr-2 md:mr-5">
           <Title
             title="お知らせ"
             childClassName="text-2xl md:text-5xl font-bold pl-10"
           />
         </Grid>
-        <Grid className="mr-8">
+        <Grid className="mr-2 md:mr-8">
           <Link
             href=""
             className="text-2xl md:text-5xl font-thin text-gray-400 hover:text-gray-50 transition-colors duration-300"

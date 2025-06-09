@@ -16,14 +16,14 @@ export const OurWorks = () => {
           layout="responsive"
         />
       </div>
-      <Grid container className="mt-4 mr-4 item-bottom">
-        <Grid className="mr-5">
+      <Grid container className="mt-2 md:mt-4 ml-2 md:ml-5 item-bottom">
+        <Grid className="mr-2 md:mr-5">
           <Title
             title="施工実績"
-            childClassName="text-2xl md:text-5xl font-bold pl-10"
+            childClassName="text-2xl md:text-5xl font-bold"
           />
         </Grid>
-        <Grid className="mr-5">
+        <Grid>
           <Link
             href=""
             className="text-2xl md:text-5xl font-thin text-gray-400 hover:text-gray-50 transition-colors duration-300"
