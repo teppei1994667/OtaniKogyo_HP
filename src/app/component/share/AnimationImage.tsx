@@ -10,10 +10,11 @@ type AnimationImageProps = {
   width: number;
   height: number;
   layout?: "responsive" | "fixed" | "intrinsic" | "fill";
+  className?: string;
 };
 
 export const AnimationImage = (props: AnimationImageProps) => {
-  const { src, alt, width, height, layout } = props;
+  const { src, alt, width, height, layout, className } = props;
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -32,6 +33,7 @@ export const AnimationImage = (props: AnimationImageProps) => {
         width={width}
         height={height}
         layout={layout || "responsive"}
+        className={className}
       />
     </motion.div>
   );
