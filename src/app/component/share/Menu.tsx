@@ -71,7 +71,7 @@ export const Menu = ({
             <Link href="">事業内容</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="">実績</Link>
+            <Link href="/OurWorks">実績</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
             <Link href="">会社概要</Link>
