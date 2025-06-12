@@ -41,7 +41,7 @@ export const AnimationMessage = (props: AnimationMessageProps) => {
       className={`${parentClassName ? parentClassName : ""}`}
     >
       <p
-        className={`text-xxs sm:text-sm md:text-base lg:text-xl whitespace-pre-line text-center leading-tight font-semibold ${
+        className={`text-sm sm:text-sm md:text-base lg:text-xl whitespace-pre-line text-center leading-tight font-semibold ${
           childClassName ? childClassName : ""
         }`}
       >

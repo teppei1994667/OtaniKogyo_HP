@@ -15,21 +15,21 @@ export const News = () => {
         <Grid className="w-1/2">
           <Image
             src="/news.png"
-            alt="事業内容"
+            alt="news"
             width={1512}
             height={245}
             layout="responsive"
           />
         </Grid>
       </Grid>
-      <Grid container className="mt-4 justify-end">
-        <Grid className="mr-5">
+      <Grid container className="mt-2 sm:mt-4 justify-end">
+        <Grid className="mr-2 md:mr-5">
           <Title
             title="お知らせ"
             childClassName="text-2xl md:text-5xl font-bold pl-10"
           />
         </Grid>
-        <Grid className="mr-8">
+        <Grid className="mr-2 md:mr-8">
           <Link
             href=""
             className="text-2xl md:text-5xl font-thin text-gray-400 hover:text-gray-50 transition-colors duration-300"
@@ -42,7 +42,7 @@ export const News = () => {
         <Grid
           key={news.id}
           container
-          className="items-center mt-4 mr-8 lg:mr-16 xl:mr-24 ml-8 lg:ml-16 xl:ml-24 border-b border-dashed border-gray-900"
+          className="items-center mt-4 mx-8 lg:mx-16 xl:mx-24 border-b border-dashed border-gray-900"
         >
           <Grid className="ml-2 text-base xl:text-lg">
             <p>{news.date}</p>
