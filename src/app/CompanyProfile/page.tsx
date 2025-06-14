@@ -6,9 +6,9 @@ import { CpTitle } from "./component/CpTitile";
 export default function CompanyProfile() {
   return (
     <>
-      <CpTitle title="会社概要" marginTopValue="32" />
+      <CpTitle title="会社概要" marginTop="mt-32" />
       <CompanyProfileDetail />
-      <CpTitle title="ACCESS" marginTopValue="12" />
+      <CpTitle title="ACCESS" marginTop="mt-12" />
       <Access />
       <Contact />
     </>
