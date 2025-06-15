@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import { BaseBorder } from "./BaseBorder";
-import { Contact } from "@/app/component/Top/Contact";
+import { Contact } from "@/app/share/topPageComponent/Contact";
 
 export const JobInformation = () => {
   return (

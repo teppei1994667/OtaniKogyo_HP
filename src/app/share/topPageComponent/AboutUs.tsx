@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Title } from "../share/Title";
-import { AnimationImage } from "../share/AnimationImage";
-import { AnimationMessage } from "../share/AnimationMessage";
+import { Title } from "../component/Title";
+import { AnimationImage } from "../component/AnimationImage";
+import { AnimationMessage } from "../component/AnimationMessage";
 
 export const AboutUs = () => {
   return (

@@ -1,10 +1,10 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { Title } from "../share/Title";
-import { AnimationImage } from "../share/AnimationImage";
-import { AnimationMessage } from "../share/AnimationMessage";
-import { AnimationSubTitle } from "../share/AnimationSubTitle";
+import { Title } from "../component/Title";
+import { AnimationImage } from "../component/AnimationImage";
+import { AnimationMessage } from "../component/AnimationMessage";
+import { AnimationSubTitle } from "../component/AnimationSubTitle";
 
 export const OurService = () => {
   return (

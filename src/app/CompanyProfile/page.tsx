@@ -1,4 +1,4 @@
-import { Contact } from "../component/Top/Contact";
+import { Contact } from "../share/topPageComponent/Contact";
 import { Access } from "./component/Access";
 import { CompanyProfileDetail } from "./component/CompanyProfileDetail";
 import { CpTitle } from "./component/CpTitile";

@@ -2,14 +2,14 @@
 
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import { AnimationImage } from "../component/share/AnimationImage";
+import { AnimationImage } from "../share/component/AnimationImage";
 import { WorkListTable } from "./component/WorkListTabel";
 import {
   AsbestosWorksList,
   DemolitionWorksList,
   DioxinWorksList,
 } from "./OurWorksList";
-import { Contact } from "../component/Top/Contact";
+import { Contact } from "../share/topPageComponent/Contact";
 
 export default function OurWorks() {
   const asbestosHeaderList = ["現場名", "場所", "Lv", "数量"];

@@ -1,8 +1,8 @@
-import { AllNewsList, NewsType } from "@/app/NewsList";
+import { AllNewsList, NewsType } from "@/app/share/data/NewsList";
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { Title } from "../share/Title";
+import { Title } from "../component/Title";
 
 export const News = () => {
   const newsList = AllNewsList.sort(

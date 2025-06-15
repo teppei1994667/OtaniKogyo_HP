@@ -1,8 +1,8 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { Title } from "../share/Title";
-import { AnimationImage } from "../share/AnimationImage";
+import { Title } from "../component/Title";
+import { AnimationImage } from "../component/AnimationImage";
 
 export const OurWorks = () => {
   return (
