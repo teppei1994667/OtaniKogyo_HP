@@ -1,16 +1,9 @@
 "use client";
 
-import {
-  Box,
-  Drawer,
-  Grid,
-  IconButton,
-  ListItemButton,
-  Typography,
-} from "@mui/material";
+import { Box, Drawer, Grid, ListItemButton, Typography } from "@mui/material";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "./styles/MenuButton.module.css";
+import { DrowerMenuButton } from "./DrowerMenuButton";
 
 export const Menu = ({
   drowerMenuVisible = true,
@@ -85,14 +78,7 @@ export const Menu = ({
         </Grid>
       ) : drowerMenuVisible ? (
         <>
-          <IconButton
-            className={styles.hamburger}
-            onClick={handleMenuButtonOnClick}
-          >
-            <span className={styles.hamburger__line}></span>
-            <span className={styles.hamburger__line}></span>
-            <span className={styles.hamburger__line}></span>
-          </IconButton>
+          <DrowerMenuButton handleMenuButtonOnClick={handleMenuButtonOnClick} />
           <Drawer
             className="text-center"
             anchor="right"
