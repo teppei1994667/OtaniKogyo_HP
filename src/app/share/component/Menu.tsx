@@ -73,7 +73,7 @@ export const Menu = ({
             <Link href="/RecruitmentInformation">採用情報</Link>
           </Grid>
           <Grid className="mx-10 hover:text-blue-300">
-            <Link href="">お問い合わせ</Link>
+            <Link href="/ContactForm">お問い合わせ</Link>
           </Grid>
         </Grid>
       ) : drowerMenuVisible ? (
