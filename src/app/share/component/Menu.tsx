@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Drawer, Grid, ListItemButton, Typography } from "@mui/material";
+import { Box, Drawer, Grid, ListItemButton } from "@mui/material";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DrowerMenuButton } from "./DrowerMenuButton";
@@ -29,24 +29,39 @@ export const Menu = ({
   }, []);
 
   const drawerList = (
-    <Box sx={{ width: "250px", paddingTop: "25px" }}>
+    <Box
+      sx={{ width: "250px", paddingTop: "25px" }}
+      onClick={handleDrawerClose}
+    >
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">Home</Typography>
+        <Link href="/" className="text-2xl">
+          Home
+        </Link>
       </ListItemButton>
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">事業内容</Typography>
+        <Link href="" className="text-2xl">
+          事業内容
+        </Link>
       </ListItemButton>
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">実績</Typography>
+        <Link href="/OurWorks" className="text-2xl">
+          実績
+        </Link>
       </ListItemButton>
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">会社概要</Typography>
+        <Link href="/CompanyProfile" className="text-2xl">
+          会社概要
+        </Link>
       </ListItemButton>
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">採用情報</Typography>
+        <Link href="/RecruitmentInformation" className="text-2xl">
+          採用情報
+        </Link>
       </ListItemButton>
       <ListItemButton className="text-center justify-center">
-        <Typography variant="h6">お問い合わせ</Typography>
+        <Link href="/ContactForm" className="text-2xl">
+          お問い合わせ
+        </Link>
       </ListItemButton>
     </Box>
   );
