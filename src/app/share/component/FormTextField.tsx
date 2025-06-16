@@ -20,7 +20,7 @@ export const FormTextField = (props: FormTextFieldProps) => {
           variant="outlined"
           error={!!error}
           helperText={error ? error.message : ""}
-          className={`w-96 bg-gray-100 ${className || ""}`}
+          className={`w-88 sm:w-96 ${className || ""}`}
           {...restProps}
         />
       )}
