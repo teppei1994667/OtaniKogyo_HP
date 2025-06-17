@@ -26,7 +26,7 @@ export const AboutUs = () => {
           大谷工業について
         </h1>
       </div>
-      <div className="relative h-80 sm:h-120 md:h-144 lg:h-192 xl:h-240 mt-6">
+      <div className="relative h-96 sm:h-120 md:h-144 lg:h-192 xl:h-240 mt-6">
         <div className="absolute w-1/2 max-w-6xl mt-8 xl:mt-16 z-10">
           <AnimationImage
             src="/about_us_image.png"
@@ -47,9 +47,9 @@ export const AboutUs = () => {
           />
         </div>
         <AnimationMessage
-          message={`あああああ、\nあああああああああああああああ、\nああああああああああああああああああ\nあああああああああああああ。\nあああああああああああ、\nああああああああああああああああ\nああああああああああああああああ。`}
+          message={`私たちは、確かな技術と誠実な施工で\nアスベストのリスクを取り除き、\n安心・安全な未来を築きます。\n法令遵守と環境配慮を徹底し、\n地域社会と共に持続可能な発展を目指します。\nすべての人に健康で快適な暮らしを届けることが、\n私たちの使命です。`}
           absolutelyShow={true}
-          parentClassName="absolute w-72 sm:w-72 md:w-80 lg:w-120 xl:w-144 h-38 sm:h-44 md:h-52 lg:h-64 xl:h-96 
+          parentClassName="absolute w-96 lg:w-120 xl:w-144 h-44 md:h-52 lg:h-64 xl:h-96 
                            bg-white z-10 bottom-0 sm:bottom-4 md:bottom-14 xl:bottom-4 right-4 sm:right-10 xl:right-32 p-2 xl:p-8"
         />
       </div>
