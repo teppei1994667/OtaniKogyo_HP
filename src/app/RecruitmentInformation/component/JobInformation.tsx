@@ -11,7 +11,7 @@ export const JobInformation = () => {
           <div className="mt-6 mx-auto w-2/3 border-b border-gray-400 hidden sm:block"></div>
         </Grid>
       </Grid>
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">職種</p>
         </Grid>
@@ -20,7 +20,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">勤務時間・曜日</p>
         </Grid>
@@ -32,7 +32,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">勤務形態</p>
         </Grid>
@@ -41,7 +41,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">休暇・休日</p>
         </Grid>
@@ -54,7 +54,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">勤務地所在地</p>
         </Grid>
@@ -66,7 +66,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">アクセス</p>
         </Grid>
@@ -75,7 +75,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">給与</p>
         </Grid>
@@ -84,7 +84,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">試用期間</p>
         </Grid>
@@ -95,7 +95,7 @@ export const JobInformation = () => {
         </Grid>
       </Grid>
       <BaseBorder />
-      <Grid container className="mt-2 justify-center flex flex-col sm:flex-row">
+      <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">待遇・福利厚生</p>
         </Grid>
@@ -105,11 +105,8 @@ export const JobInformation = () => {
           <p className="text-base">XXXXXXXXXXXXX</p>
         </Grid>
       </Grid>
-      <Grid
-        container
-        className="mt-10 justify-center flex flex-col sm:flex-row"
-      >
-        <Grid className="flex items-center">
+      <Grid container className="mt-10 lg:justify-center ">
+        <Grid className="flex items-center justify-center w-full lg:w-120 ">
           <p className="text-lg font-bold whitespace-pre-line sm:whitespace-normal text-center hidden sm:block">
             {`お問い合わせ・応募については\n右記よりご連絡ください。`}
           </p>
@@ -117,7 +114,7 @@ export const JobInformation = () => {
             {`お問い合わせ・応募については\n下記よりご連絡ください。`}
           </p>
         </Grid>
-        <Grid className="sm:ml-24 mt-4 sm:mt-0">
+        <Grid className="lg:ml-24 mt-4 lg:mt-0 w-full lg:w-56 flex justify-center">
           <button className="text-xs lg:text-base bg-white border border-black p-3 md:p-5 lg:p-6 hover:bg-gray-200 transition-colors duration-300">
             {`お問い合わせフォーム  >`}
           </button>
