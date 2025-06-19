@@ -32,14 +32,6 @@ export const CompanyProfileDetail = () => {
       </Grid>
       <Grid container className="justify-center mt-2">
         <Grid className="flex items-center bg-gray-400 h-12 w-48 justify-center">
-          <p className="text-lg">Fax</p>
-        </Grid>
-        <Grid className="flex items-center bg-gray-200 h-12 w-144 ml-4 pl-2">
-          <p className="text-lg">06-6666-6666</p>
-        </Grid>
-      </Grid>
-      <Grid container className="justify-center mt-2">
-        <Grid className="flex items-center bg-gray-400 h-12 w-48 justify-center">
           <p className="text-lg">資本金</p>
         </Grid>
         <Grid className="flex items-center bg-gray-200 h-12 w-144 ml-4 pl-2">
