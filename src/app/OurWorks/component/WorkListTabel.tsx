@@ -4,12 +4,12 @@ import { WorksType } from "../OurWorksList";
 type WorkListTable = {
   title: string;
   tabelHeaderList: string[];
-  bgPosition: string;
+  bgPosition?: string;
   workListData: WorksType[];
 };
 
 export const WorkListTable = (props: WorkListTable) => {
-  const { title, tabelHeaderList, bgPosition, workListData } = props;
+  const { title, tabelHeaderList, bgPosition = "left", workListData } = props;
   return (
     <>
       <div className="relative mt-10">
@@ -19,19 +19,19 @@ export const WorkListTable = (props: WorkListTable) => {
           </Grid>
         </Grid>
         <Grid container className="mt-6 justify-center">
-          <Grid>
+          <Grid className="w-4/5 lg:w-auto">
             <div className="overflow-x-auto">
-              <table className="table-auto w-full border-collapse border border-gray-300">
+              <table className="table-auto w-full border-collapse border border-gray-900">
                 <thead>
-                  <tr className="bg-blue-100">
-                    <th className="border border-gray-300 px-4 py-2 text-center w-96">
+                  <tr className="bg-blue-200">
+                    <th className="border border-gray-300 px-4 py-2 text-center w-144">
                       {tabelHeaderList[0]}
                     </th>
-                    <th className="border border-gray-300 px-4 py-2 text-center w-36">
+                    <th className="border border-gray-300 px-4 py-2 text-center w-48">
                       {tabelHeaderList[1]}
                     </th>
                     {tabelHeaderList[2] ? (
-                      <th className="border border-gray-300 px-4 py-2 text-center w-36">
+                      <th className="border border-gray-300 px-4 py-2 text-center w-48">
                         {tabelHeaderList[2]}
                       </th>
                     ) : null}
@@ -67,7 +67,7 @@ export const WorkListTable = (props: WorkListTable) => {
           </Grid>
         </Grid>
         <div
-          className={`absolute top-0 ${bgPosition}-0 w-4/5 bg-gray-100 h-72 -z-10`}
+          className={`absolute top-0 ${bgPosition}-0 w-4/5 bg-blue-100 h-96 -z-10`}
         ></div>
       </div>
     </>
