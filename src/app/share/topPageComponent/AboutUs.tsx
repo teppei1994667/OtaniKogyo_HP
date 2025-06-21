@@ -17,12 +17,12 @@ export const AboutUs = () => {
         />
         <Title
           title="About Us"
-          parentClassName="absolute bottom-0 left-0 item-bottom"
-          childClassName="text-4xl md:text-5xl lg:text-6xl xl:text-7xl pl-5"
+          parentClassName="absolute -bottom-4 sm:bottom-0 left-0"
+          childClassName="text-5xl lg:text-6xl xl:text-7xl pl-2 sm:pl-5"
         />
       </div>
-      <div className="pl-6 md:pl-12 lg:pl-14">
-        <h1 className="text-base md:text-xl xl:text-2xl font-bold primary-color">
+      <div className="pl-4 sm:pl-8 lg:pl-14 mt-2 sm:mt-0">
+        <h1 className="text-base md:text-xl xl:text-2xl font-bold text-gray-700">
           大谷工業について
         </h1>
       </div>
