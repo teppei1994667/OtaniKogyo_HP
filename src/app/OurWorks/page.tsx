@@ -12,7 +12,7 @@ export default function OurWorks() {
 
   return (
     <>
-      <div className="relative ">
+      <div className="relative mt-16">
         <Image
           src="/our_works_top.png"
           alt="our service"
@@ -30,7 +30,7 @@ export default function OurWorks() {
           className="absolute -bottom-10 right-0 w-1/2 bg-white p-2"
         />
       </div>
-      <div className="bg-gray-300 py-10 mt-20">
+      <div className="bg-gray-300 py-4 sm:py-10 mt-16 sm:mt-20">
         <Grid container className="justify-center">
           <Grid>
             <h1 className="text-2xl md:text-4xl font-bold text-gray-900">
