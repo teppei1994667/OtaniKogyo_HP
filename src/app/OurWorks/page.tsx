@@ -4,20 +4,15 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import { AnimationImage } from "../share/component/AnimationImage";
 import { WorkListTable } from "./component/WorkListTabel";
-import {
-  AsbestosWorksList,
-  DemolitionWorksList,
-  DioxinWorksList,
-} from "./OurWorksList";
+import { OurWorksList } from "./OurWorksList";
 import { Contact } from "../share/topPageComponent/Contact";
 
 export default function OurWorks() {
-  const asbestosHeaderList = ["現場名", "場所", "Lv", "数量"];
-  const dioxinHeaderList = ["現場名", "場所", "管理区域", "焼却能力"];
-  const demolitionHeaderList = ["現場名", "場所", "規模"];
+  const asbestosHeaderList = ["現場名", "場所", "施工内容"];
+
   return (
     <>
-      <div className="relative ">
+      <div className="relative mt-16">
         <Image
           src="/our_works_top.png"
           alt="our service"
@@ -35,7 +30,7 @@ export default function OurWorks() {
           className="absolute -bottom-10 right-0 w-1/2 bg-white p-2"
         />
       </div>
-      <div className="bg-gray-300 py-10 mt-20">
+      <div className="bg-gray-300 py-4 sm:py-10 mt-16 sm:mt-20">
         <Grid container className="justify-center">
           <Grid>
             <h1 className="text-2xl md:text-4xl font-bold text-gray-900">
@@ -50,22 +45,9 @@ export default function OurWorks() {
         </Grid>
       </div>
       <WorkListTable
-        title="アスベスト除去工事"
+        title="実績一覧"
         tabelHeaderList={asbestosHeaderList}
-        bgPosition="left"
-        workListData={AsbestosWorksList}
-      />
-      <WorkListTable
-        title="ダイオキシン類対策工事"
-        tabelHeaderList={dioxinHeaderList}
-        bgPosition="right"
-        workListData={DioxinWorksList}
-      />
-      <WorkListTable
-        title="解体・仮設足場・外構工事"
-        tabelHeaderList={demolitionHeaderList}
-        bgPosition="left"
-        workListData={DemolitionWorksList}
+        workListData={OurWorksList}
       />
       <Contact />
     </>
