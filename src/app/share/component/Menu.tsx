@@ -33,33 +33,36 @@ export const Menu = ({
       sx={{ width: "250px", paddingTop: "25px" }}
       onClick={handleDrawerClose}
     >
-      <ListItemButton className="text-center justify-center">
-        <Link href="/" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link href="/" className="text-2xl w-full text-center">
           Home
         </Link>
       </ListItemButton>
-      <ListItemButton className="text-center justify-center">
-        <Link href="" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link href="" className="text-2xl w-full text-center">
           事業内容
         </Link>
       </ListItemButton>
-      <ListItemButton className="text-center justify-center">
-        <Link href="/OurWorks" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link href="/OurWorks" className="text-2xl w-full text-center">
           実績
         </Link>
       </ListItemButton>
-      <ListItemButton className="text-center justify-center">
-        <Link href="/CompanyProfile" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link href="/CompanyProfile" className="text-2xl w-full text-center">
           会社概要
         </Link>
       </ListItemButton>
-      <ListItemButton className="text-center justify-center">
-        <Link href="/RecruitmentInformation" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link
+          href="/RecruitmentInformation"
+          className="text-2xl w-full text-center"
+        >
           採用情報
         </Link>
       </ListItemButton>
-      <ListItemButton className="text-center justify-center">
-        <Link href="/ContactForm" className="text-2xl">
+      <ListItemButton className="w-full">
+        <Link href="/ContactForm" className="text-2xl w-full text-center">
           お問い合わせ
         </Link>
       </ListItemButton>
