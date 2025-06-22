@@ -17,6 +17,7 @@ export default function RecruitmentInformation() {
       <Grid container className="md:-mt-20 xl:h-60 w-full justify-center">
         <Grid className="w-11/12 lg:w-240 bg-white text-center pt-6 sm:pt-8">
           <h1 className="font-bold text-3xl">採用情報</h1>
+          <h1 className="text-base text-blue-400">Recruitment information</h1>
           <h1 className="font-bold text-xl mt-4">
             未来を築く仲間を募集しています
           </h1>
