@@ -5,7 +5,7 @@ import { JobInformation } from "./component/JobInformation";
 export default function RecruitmentInformation() {
   return (
     <>
-      <div className="w-full mt-20">
+      <div className="w-full mt-16">
         <Image
           src="/recruitment_infomation_top.png"
           alt="our service"
