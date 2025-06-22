@@ -39,7 +39,7 @@ export const Menu = ({
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link href="" className="text-2xl w-full text-center">
+        <Link href="/OurService" className="text-2xl w-full text-center">
           事業内容
         </Link>
       </ListItemButton>
@@ -79,7 +79,7 @@ export const Menu = ({
             </Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="">事業内容</Link>
+            <Link href="/OurService">事業内容</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
             <Link href="/OurWorks">実績</Link>
