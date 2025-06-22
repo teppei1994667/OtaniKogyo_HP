@@ -9,7 +9,7 @@ type ContactFormValues = {
   name: string;
   phoneNumber: string;
   email: string;
-  inquiryContent: string;
+  message: string;
 };
 
 export default function ContactForm() {
@@ -19,13 +19,32 @@ export default function ContactForm() {
       name: "",
       phoneNumber: "",
       email: "",
-      inquiryContent: "",
+      message: "",
     },
   });
 
-  const handleSendOnClick = () => {
+  const handleSendOnClick = async () => {
     const formData = contactForm.getValues();
     console.log("送信データ:", formData);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        alert("お問い合わせを送信しました");
+        contactForm.reset(); // フォームをリセット
+      }
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("送信エラー:", error.message);
+      } else {
+        console.error("エラーが発生しました");
+      }
+    }
   };
 
   return (
@@ -129,7 +148,7 @@ export default function ContactForm() {
           </Grid>
           <Grid className="mt-2 sm:mt-0 ml-0 sm:ml-10 w-full sm:w-auto text-center">
             <FormTextField
-              name="inquiryContent"
+              name="message"
               variant="outlined"
               multiline
               rows={6}
