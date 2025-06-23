@@ -35,15 +35,18 @@ export const CompanyProfileDetail = () => {
           <p className="text-lg">資本金</p>
         </Grid>
         <Grid className="flex items-center bg-gray-200 h-12 w-5/6 sm:w-3/5 lg:w-144 sm:ml-4 pl-2">
-          <p className="text-lg">200万円</p>
+          <p className="text-lg">500万円</p>
         </Grid>
       </Grid>
       <Grid container className="justify-center mt-2">
-        <Grid className="flex items-center bg-gray-400 h-12 w-5/6 sm:w-48 sm:justify-center pl-2 sm:pl-0">
-          <p className="text-lg">代表</p>
+        <Grid className="flex items-center bg-gray-400 h-12 sm:h-24 w-5/6 sm:w-48 sm:justify-center pl-2 sm:pl-0">
+          <p className="font-medium text-lg">代表</p>
         </Grid>
-        <Grid className="flex items-center bg-gray-200 h-12 w-5/6 sm:w-3/5 lg:w-144 sm:ml-4 pl-2">
-          <p className="text-lg">代表取締役 谷 大介</p>
+        <Grid className="flex flex-col sm:justify-center bg-gray-200 h-32 sm:h-24 w-5/6 sm:w-3/5 lg:w-144 sm:ml-4 pt-4 sm:pt-0 pl-2">
+          <p className="text-lg">代表取締役社長 谷 由衣</p>
+          <p className="text-lg whitespace-pre-line md:whitespace-normal">
+            専務取締役 谷 大介
+          </p>
         </Grid>
       </Grid>
       <Grid container className="justify-center mt-2">
