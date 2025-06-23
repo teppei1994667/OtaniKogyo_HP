@@ -27,11 +27,14 @@ const sendEmail = async ({
   const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
   sendSmtpEmail.subject = "【お問い合わせ】フォームからのメッセージ";
   sendSmtpEmail.htmlContent = `
-  <p><strong>お名前:</strong> ${name}</p>
-  <p><strong>メールアドレス:</strong> ${email}</p>
-  <p><strong>メッセージ:</strong></p><p>${message.replace(/\n/g, "<br>")}</p>
-  ${companyName ? `<p><strong>会社名:</strong> ${companyName}</p>` : ""}
-  ${phoneNumber ? `<p><strong>電話番号:</strong> ${phoneNumber}</p>` : ""}
+  <p><strong>【お名前】:</strong> ${name}</p>
+  <p><strong>【メールアドレス】:</strong> ${email}</p>
+  <p><strong>【メッセージ】:</strong></p><p>${message.replace(
+    /\n/g,
+    "<br>"
+  )}</p>
+  ${companyName ? `<p><strong>【会社名】:</strong> ${companyName}</p>` : ""}
+  ${phoneNumber ? `<p><strong>【電話番号】:</strong> ${phoneNumber}</p>` : ""}
   `;
   sendSmtpEmail.sender = {
     name: process.env.SENDER_NAME,
