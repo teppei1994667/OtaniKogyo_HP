@@ -17,7 +17,8 @@ export const JobInformation = () => {
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
           <p className="text-base">現場管理者 / 現場作業員 / 営業職</p>
-          <p className="text-base mt-4">※資格保有者優遇</p>
+          <p className="text-base mt-4">未経験者歓迎◎</p>
+          <p className="text-base">資格保有者優遇</p>
         </Grid>
       </Grid>
       <BaseBorder />
