@@ -16,7 +16,8 @@ export const JobInformation = () => {
           <p className="text-base font-bold">職種</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">現場管理者候補 / 作業員</p>
+          <p className="text-base">現場管理者 / 現場作業員 / 営業職</p>
+          <p className="text-base mt-4">※資格保有者優遇</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -26,9 +27,7 @@ export const JobInformation = () => {
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
           <p className="text-base">8：00～17：00</p>
-          <p className="text-base mt-4">・基本的に残業なし</p>
-          <p className="text-base">・こまめな休憩、水分補給時間あり</p>
-          <p className="text-base">・現場直行OK</p>
+          <p className="text-base mt-4">・こまめな休憩、水分補給時間あり</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -38,6 +37,7 @@ export const JobInformation = () => {
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
           <p className="text-base">固定時間制</p>
+          <p className="text-base">出張あり</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -46,9 +46,8 @@ export const JobInformation = () => {
           <p className="text-base font-bold">休暇・休日</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">土曜日、日曜日、祝日</p>
-          <p className="text-base mt-4">・土日祝休推奨</p>
-          <p className="text-base">・GW休暇</p>
+          <p className="text-base">日曜日、祝日</p>
+          <p className="text-base mt-4">・GW休暇</p>
           <p className="text-base">・お盆休暇</p>
           <p className="text-base">・年末年始休暇</p>
         </Grid>
@@ -59,10 +58,7 @@ export const JobInformation = () => {
           <p className="text-base font-bold">勤務地所在地</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">大阪府大阪市住吉区沢之町1-1-13</p>
-          <p className="text-base mt-4 whitespace-pre-line sm:whitespace-normal">
-            {`※現場は天王寺、阿倍野、平尾、\n生野、堺など多数あります。`}
-          </p>
+          <p className="text-base">大阪市西成区鶴見橋3-2-17</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -71,7 +67,7 @@ export const JobInformation = () => {
           <p className="text-base font-bold">アクセス</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">XXXXXXXXXXXXX</p>
+          <p className="text-base">地下鉄四ツ橋線花園町駅から徒歩8分</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -80,7 +76,7 @@ export const JobInformation = () => {
           <p className="text-base font-bold">給与</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">XXXXXXXXXXXXX</p>
+          <p className="text-base">25万〜45万 ※昇給有り</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -89,9 +85,7 @@ export const JobInformation = () => {
           <p className="text-base font-bold">試用期間</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">試用期間あり</p>
-          <p className="text-base">試用期間：3か月</p>
-          <p className="text-base">試用期間中の労働条件：同条件</p>
+          <p className="text-base">３ヶ月</p>
         </Grid>
       </Grid>
       <BaseBorder />
@@ -100,9 +94,10 @@ export const JobInformation = () => {
           <p className="text-base font-bold">待遇・福利厚生</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">XXXXXXXXXXXXX</p>
-          <p className="text-base">XXXXXXXXXXXXX</p>
-          <p className="text-base">XXXXXXXXXXXXX</p>
+          <p className="text-base">社会保険・労働保険完備</p>
+          <p className="text-base">健康診断</p>
+          <p className="text-base">交通費支給</p>
+          <p className="text-base">制服貸与</p>
         </Grid>
       </Grid>
       <Grid container className="mt-10 lg:justify-center ">
