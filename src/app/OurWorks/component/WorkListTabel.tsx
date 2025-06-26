@@ -23,7 +23,7 @@ export const WorkListTable = (props: WorkListTable) => {
 
   return (
     <>
-      <div className="relative mt-2">
+      <div className="relative mt-10">
         <Grid container className="pt-4 justify-center">
           <Grid className="">
             <h1 className="text-2xl md:text-4xl font-bold">{title}</h1>
