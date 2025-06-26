@@ -18,7 +18,8 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.57.0",
     "react-intersection-observer": "^9.16.0",
-    "sib-api-v3-sdk": "^8.5.0"
+    "sib-api-v3-sdk": "^8.5.0",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
