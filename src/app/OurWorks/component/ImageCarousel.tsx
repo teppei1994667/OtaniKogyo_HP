@@ -1,9 +1,16 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-export const ImageCarousel = () => {
+type ImageCarouselProps = {
+  ImageCarousel?: number | "auto";
+};
+
+export const ImageCarousel = (props: ImageCarouselProps) => {
+  const { ImageCarousel = 3 } = props;
   const images = [
     "/image/OurWorks/slide1.png",
     "/image/OurWorks/slide2.png",
@@ -21,7 +28,6 @@ export const ImageCarousel = () => {
         delay: 2000, // 2秒ごとに自動スライド
         disableOnInteraction: false, // ユーザー操作後も自動再開
       }}
-      slidesPerView={3}
       loop={true}
       speed={700}
       breakpoints={{
@@ -33,6 +39,9 @@ export const ImageCarousel = () => {
         },
         860: {
           slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: ImageCarousel,
         },
       }}
     >
