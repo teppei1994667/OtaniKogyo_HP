@@ -84,6 +84,15 @@ export const JobInformation = () => {
       <BaseBorder />
       <Grid container className="mt-2 justify-center">
         <Grid className="sm:text-center w-9/12 sm:w-2/5">
+          <p className="text-base font-bold">雇用形態</p>
+        </Grid>
+        <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
+          <p className="text-base">正社員</p>
+        </Grid>
+      </Grid>
+      <BaseBorder />
+      <Grid container className="mt-2 justify-center">
+        <Grid className="sm:text-center w-9/12 sm:w-2/5">
           <p className="text-base font-bold">試用期間</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
