@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../component/Title";
-import { ImageCarousel } from "@/app/OurWorks/component/ImageCarousel";
+import { ImageCarousel } from "../component/ImageCarousel";
 
 export const OurWorks = () => {
   return (

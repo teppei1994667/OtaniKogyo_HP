@@ -5,7 +5,7 @@ import Image from "next/image";
 import { WorkListTable } from "./component/WorkListTabel";
 import { OurWorksList } from "./OurWorksList";
 import { Contact } from "../share/topPageComponent/Contact";
-import { ImageCarousel } from "./component/ImageCarousel";
+import { ImageCarousel } from "../share/component/ImageCarousel";
 
 export default function OurWorks() {
   const asbestosHeaderList = ["現場名", "場所", "施工内容"];
