@@ -5,7 +5,7 @@ import Image from "next/image";
 import { WorkListTable } from "./component/WorkListTabel";
 import { OurWorksList } from "./OurWorksList";
 import { Contact } from "../share/topPageComponent/Contact";
-import { ImageCarousel } from "./component/ImageCarousel";
+import { ImageCarousel } from "../share/component/ImageCarousel";
 
 export default function OurWorks() {
   const asbestosHeaderList = ["現場名", "場所", "施工内容"];
@@ -31,7 +31,7 @@ export default function OurWorks() {
         </Grid>
       </Grid>
       <Grid container className="justify-center">
-        <Grid className="w-11/12 lg:w-4/5 xl:w-2/3">
+        <Grid>
           <ImageCarousel />
         </Grid>
       </Grid>

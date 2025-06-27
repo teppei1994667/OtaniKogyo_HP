@@ -5,12 +5,7 @@ import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-type ImageCarouselProps = {
-  ImageCarousel?: number | "auto";
-};
-
-export const ImageCarousel = (props: ImageCarouselProps) => {
-  const { ImageCarousel = 3 } = props;
+export const ImageCarousel = () => {
   const images = [
     "/image/OurWorks/slide1.png",
     "/image/OurWorks/slide2.png",
@@ -19,6 +14,10 @@ export const ImageCarousel = (props: ImageCarouselProps) => {
     "/image/OurWorks/slide5.jpg",
     "/image/OurWorks/slide6.jpg",
     "/image/OurWorks/slide7.jpg",
+    "/image/OurWorks/slide8.jpg",
+    "/image/OurWorks/slide9.jpg",
+    "/image/OurWorks/slide10.jpg",
+    "/image/OurWorks/slide11.jpg",
   ];
 
   return (
@@ -41,7 +40,7 @@ export const ImageCarousel = (props: ImageCarouselProps) => {
           slidesPerView: 3,
         },
         1280: {
-          slidesPerView: ImageCarousel,
+          slidesPerView: 4,
         },
       }}
     >
