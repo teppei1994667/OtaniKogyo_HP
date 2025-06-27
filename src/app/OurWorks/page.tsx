@@ -31,7 +31,7 @@ export default function OurWorks() {
         </Grid>
       </Grid>
       <Grid container className="justify-center">
-        <Grid className="w-11/12 lg:w-4/5 xl:w-2/3">
+        <Grid>
           <ImageCarousel />
         </Grid>
       </Grid>

@@ -36,7 +36,7 @@ export const OurWorks = () => {
         className="relative justify-between top-10 lg:top-20 lg:ml-12 h-60 lg:h-72 xl:h-96"
       >
         <Grid>
-          <ImageCarousel ImageCarousel={4} />
+          <ImageCarousel />
         </Grid>
       </Grid>
     </>
