@@ -24,7 +24,7 @@ export const CompanyProfileDetail = () => {
       </Grid>
       <Grid container className="justify-center mt-2">
         <Grid className="flex items-center bg-gray-400 h-12 w-5/6 sm:w-48 sm:justify-center pl-2 sm:pl-0">
-          <p className="text-lg">TEL</p>
+          <p className="text-lg">TEL・FAX</p>
         </Grid>
         <Grid className="flex items-center bg-gray-200 h-12 w-5/6 sm:w-3/5 lg:w-144 sm:ml-4 pl-2">
           <p className="text-lg">06-7654-9938</p>

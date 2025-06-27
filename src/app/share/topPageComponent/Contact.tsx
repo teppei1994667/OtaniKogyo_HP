@@ -31,7 +31,7 @@ export const Contact = () => {
         >
           <Grid>
             <h1 className="text-sm md:text-xl xl:text-2xl whitespace-pre-line text-center">
-              TEL 06-7654-9938
+              TEL・FAX 06-7654-9938
             </h1>
           </Grid>
           <Grid>
