@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import { ContactFormButton } from "../component/ContactFormButton";
 
 export const Contact = () => {
   return (
@@ -35,9 +36,7 @@ export const Contact = () => {
             </h1>
           </Grid>
           <Grid>
-            <button className="text-xs lg:text-base bg-white border border-black p-3 md:p-5 lg:p-6 hover:bg-gray-200 transition-colors duration-300">
-              {`お問い合わせフォーム  >`}
-            </button>
+            <ContactFormButton />
           </Grid>
         </Grid>
       </div>

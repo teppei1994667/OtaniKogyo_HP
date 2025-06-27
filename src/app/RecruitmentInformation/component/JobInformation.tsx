@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import { BaseBorder } from "./BaseBorder";
 import { Contact } from "@/app/share/topPageComponent/Contact";
+import { ContactFormButton } from "@/app/share/component/ContactFormButton";
 
 export const JobInformation = () => {
   return (
@@ -111,9 +112,7 @@ export const JobInformation = () => {
           </p>
         </Grid>
         <Grid className="lg:ml-24 mt-4 lg:mt-0 w-full lg:w-56 flex justify-center">
-          <button className="text-xs lg:text-base bg-white border border-black p-3 md:p-5 lg:p-6 hover:bg-gray-200 transition-colors duration-300">
-            {`お問い合わせフォーム  >`}
-          </button>
+          <ContactFormButton />
         </Grid>
       </Grid>
       <Contact />
