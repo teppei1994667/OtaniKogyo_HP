@@ -7,7 +7,13 @@ import { useEffect, useState } from "react";
 export const MainImage = () => {
   const [isShowMainText, setIsShowMainText] = useState(false);
 
-  const images = ["/main_image1.jpg", "/main_image2.png", "/main_image3.jpg"]; // 切り替える画像のパスを配列で定義
+  // 切り替える画像のパスを配列で定義
+  const images = [
+    "/image/top/main_image1.jpg",
+    "/image/top/main_image2.png",
+    "/image/top/main_image3.jpg",
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
 
