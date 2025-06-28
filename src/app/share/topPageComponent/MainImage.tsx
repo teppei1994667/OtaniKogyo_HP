@@ -66,7 +66,7 @@ export const MainImage = () => {
               isShowMainText ? "opacity-100" : "opacity-0"
             }`}
           >
-            I Make Beautiful Feature
+            Clean Future, No Asbestos.
           </h1>
         </div>
       </motion.div>

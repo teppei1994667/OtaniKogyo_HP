@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export const ContactFormButton = () => {
   const router = useRouter();
   const handleContactFormOnClick = () => {
-    router.push("/ContactForm");
+    router.push("/contact");
   };
   return (
     <button
