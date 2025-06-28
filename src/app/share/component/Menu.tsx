@@ -39,30 +39,27 @@ export const Menu = ({
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link href="/OurService" className="text-2xl w-full text-center">
+        <Link href="/services" className="text-2xl w-full text-center">
           事業内容
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link href="/OurWorks" className="text-2xl w-full text-center">
+        <Link href="/works" className="text-2xl w-full text-center">
           実績
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link href="/CompanyProfile" className="text-2xl w-full text-center">
+        <Link href="/company" className="text-2xl w-full text-center">
           会社概要
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link
-          href="/RecruitmentInformation"
-          className="text-2xl w-full text-center"
-        >
+        <Link href="/recruit" className="text-2xl w-full text-center">
           採用情報
         </Link>
       </ListItemButton>
       <ListItemButton className="w-full">
-        <Link href="/ContactForm" className="text-2xl w-full text-center">
+        <Link href="/contact" className="text-2xl w-full text-center">
           お問い合わせ
         </Link>
       </ListItemButton>
@@ -79,19 +76,19 @@ export const Menu = ({
             </Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="/OurService">事業内容</Link>
+            <Link href="/services">事業内容</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="/OurWorks">実績</Link>
+            <Link href="/works">実績</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="/CompanyProfile">会社概要</Link>
+            <Link href="/company">会社概要</Link>
           </Grid>
           <Grid className="ml-10 hover:text-blue-300">
-            <Link href="/RecruitmentInformation">採用情報</Link>
+            <Link href="/recruit">採用情報</Link>
           </Grid>
           <Grid className="mx-10 hover:text-blue-300">
-            <Link href="/ContactForm">お問い合わせ</Link>
+            <Link href="/contact">お問い合わせ</Link>
           </Grid>
         </Grid>
       ) : drowerMenuVisible ? (

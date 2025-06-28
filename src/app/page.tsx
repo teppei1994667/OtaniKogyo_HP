@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   description:
     "大谷工業はアスベスト除去、ダイオキシン対策に対応。安全・安心な工事を全国対応で提供します。",
   robots: "index, follow",
-  keywords: ["アスベスト除去", "ダイオキシン工事", "解体工事"],
+  keywords: ["解体工事", "アスベスト除去", "ダイオキシン工事"],
   alternates: {
-    canonical: "https://example.com/",
+    canonical: "https://www.otani-company.com/",
   },
   openGraph: {
-    title: "株式会社大谷工業 | アスベスト除去の専門業者",
-    description: "安心・安全なアスベスト除去工事を全国対応で実施。",
-    url: "https://example.com/",
+    title: "株式会社大谷工業 | アスベスト除去、解体業の専門業者",
+    description: "安心・安全なアスベスト除去工事を実施。",
+    url: "https://www.otani-company.com/",
     siteName: "株式会社大谷工業",
     locale: "ja_JP",
     type: "website",
