@@ -32,7 +32,7 @@ export const AnimationMessage = (props: AnimationMessageProps) => {
     }
   }, []);
 
-  return windowWidth == null || windowWidth >= 640 || absolutelyShow ? (
+  return windowWidth == null || windowWidth >= 740 || absolutelyShow ? (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
@@ -41,7 +41,7 @@ export const AnimationMessage = (props: AnimationMessageProps) => {
       className={`${parentClassName ? parentClassName : ""}`}
     >
       <p
-        className={`text-sm md:text-base lg:text-xl whitespace-pre-line text-center leading-snug xl:leading-relaxed font-semibold ${
+        className={`text-sm lg:text-base xl:text-xl whitespace-pre-line text-center leading-snug xl:leading-relaxed font-semibold ${
           childClassName ? childClassName : ""
         }`}
       >

@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import { JobInformation } from "./component/JobInformation";
+import { AnimationImage } from "../share/component/AnimationImage";
 
 export default function RecruitmentInformation() {
   return (
@@ -17,7 +18,7 @@ export default function RecruitmentInformation() {
       <Grid container className="md:-mt-20 xl:h-60 w-full justify-center">
         <Grid className="w-11/12 lg:w-240 bg-white text-center pt-6 sm:pt-8">
           <h1 className="font-bold text-3xl">採用情報</h1>
-          <h1 className="text-base text-blue-400">Recruitment information</h1>
+          <h1 className="text-base text-blue-400">recruit</h1>
           <h1 className="font-bold text-xl mt-4">
             未来を築く仲間を募集しています
           </h1>
@@ -34,7 +35,7 @@ export default function RecruitmentInformation() {
       </Grid>
       <Grid container className="mt-8 justify-center">
         <Grid className="w-120">
-          <Image
+          <AnimationImage
             src="/recruitment_image.jpg"
             alt="our service"
             width={5472}
@@ -71,7 +72,9 @@ export default function RecruitmentInformation() {
       </Grid>
       <Grid container className="mt-8 justify-center">
         <Grid className="w-132 order-last lg:order-none">
-          <p className="mt-10 text-center font-bold text-xl">アットホーム</p>
+          <p className="mt-4 lg:mt-10 text-center font-bold text-xl">
+            アットホーム
+          </p>
           <p className="mt-6 text-lg text-center">
             {`大谷工業では、社員同士が支え合い、`}
           </p>
@@ -92,7 +95,7 @@ export default function RecruitmentInformation() {
           </p>
         </Grid>
         <Grid className="w-120 order-first lg:order-none">
-          <Image
+          <AnimationImage
             src="/recruitment_image2.jpg"
             alt="our service"
             width={5472}

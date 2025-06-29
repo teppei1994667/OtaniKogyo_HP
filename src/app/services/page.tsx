@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import { Contact } from "../share/topPageComponent/Contact";
+import { AnimationImage } from "../share/component/AnimationImage";
 
 export default function OurService() {
   return (
@@ -17,7 +18,7 @@ export default function OurService() {
       <Grid container className="md:-mt-20 xl:h-80 w-full justify-center">
         <Grid className="w-11/12 lg:w-240 bg-white text-center pt-6 sm:pt-8">
           <h1 className="font-bold text-3xl">事業内容</h1>
-          <h1 className="text-base text-blue-400">our service</h1>
+          <h1 className="text-base text-blue-400">our services</h1>
           <h1 className="font-bold text-xl mt-4">
             安全・安心な環境づくりへの挑戦
           </h1>
@@ -47,7 +48,7 @@ export default function OurService() {
             <h1 className="text-base text-blue-400 text-end">Asbestos</h1>
           </div>
           <div className="2xl:w-192 -mt-40 sm:-mt-36 ml-2 sm:ml-28">
-            <Image
+            <AnimationImage
               src="/our_service_image.png"
               alt="Asbestos Removal"
               width={796}
@@ -95,7 +96,7 @@ export default function OurService() {
       </Grid>
       <Grid container className="mt-6 justify-center items-center">
         <Grid className="w-120">
-          <Image
+          <AnimationImage
             src="/about_asbestos.JPG"
             alt="our service"
             width={2000}
@@ -118,7 +119,7 @@ export default function OurService() {
             <h1 className="text-base text-blue-400 text-end">Dioxin</h1>
           </div>
           <div className="2xl:w-192 -mt-40 sm:-mt-36 ml-2 sm:ml-28">
-            <Image
+            <AnimationImage
               src="/our_service_image2.jpg"
               alt="Asbestos Removal"
               width={796}
@@ -170,7 +171,7 @@ export default function OurService() {
             </h1>
           </div>
           <div className="2xl:w-192 -mt-40 sm:-mt-36 ml-2 sm:ml-28">
-            <Image
+            <AnimationImage
               src="/our_service_image3.jpg"
               alt="Asbestos Removal"
               width={796}
