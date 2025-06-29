@@ -67,7 +67,10 @@ export default function OurService() {
                 高度な専門技術と豊富な実績
               </p>
               <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`長年の経験と研ぎ澄まされた技術により、\n各種現場で安全かつ確実な工事を実施しています。`}
+                {`長年の経験と研ぎ澄まされた技術により、`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line sm:whitespace-normal">
+                {`各種現場で安全かつ確実な工事を\n実施しています。`}
               </p>
             </div>
             <div className="mt-4">
@@ -82,8 +85,11 @@ export default function OurService() {
               <p className="mt-4 text-xl font-bold text-center">
                 精度の高い調査・分析能力
               </p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`高性能な測定機器と確かな技術による詳細な調査・分析で、\n正確な現状把握と最適な対応策を提案できます。`}
+              <p className="text-base text-center mt-2 whitespace-pre-line sm:whitespace-normal">
+                {`高性能な測定機器と確かな技術による\n詳細な調査・分析で、`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line">
+                {`正確な現状把握と最適な対応策を提案できます。`}
               </p>
             </div>
           </div>
@@ -105,8 +111,23 @@ export default function OurService() {
           />
         </Grid>
         <Grid className="w-132 lg:ml-10">
-          <p className="mt-6 text-base sm:text-lg text-center whitespace-pre-line">
-            {`アスベスト（石綿）とは、天然に産出する繊維状の鉱物で、\n耐熱性や耐薬品性、絶縁性に優れていることから、\nかつては建材や断熱材など幅広い用途で使用されてきました。\nしかし、アスベストを吸い込むことで健康被害\n（肺がんや中皮腫など）を引き起こすことが明らかになり、\n現在はその使用が禁止されています。`}
+          <p className="mt-6 text-base sm:text-lg text-center whitespace-pre-line sm:whitespace-normal">
+            {`アスベスト（石綿）とは、\n天然に産出する繊維状の鉱物で`}
+          </p>
+          <p className="text-base sm:text-lg text-center">
+            {`耐熱性や耐薬品性、絶縁性に優れていることから、`}
+          </p>
+          <p className="text-base sm:text-lg text-center whitespace-pre-line sm:whitespace-normal">
+            {`かつては建材や断熱材など幅広い用途で\n使用されてきました。`}
+          </p>
+          <p className="text-base sm:text-lg text-center">
+            {`しかし、アスベストを吸い込むことで`}
+          </p>
+          <p className="text-base sm:text-lg text-center whitespace-pre-line sm:whitespace-normal">
+            {`健康被害（肺がんや中皮腫など）を\n引き起こすことが`}
+          </p>
+          <p className="text-base sm:text-lg text-center whitespace-pre-line sm:whitespace-normal">
+            {`明らかになり、現在はその使用が\n禁止されています。`}
           </p>
         </Grid>
       </Grid>
@@ -137,16 +158,34 @@ export default function OurService() {
               <p className="text-xl font-bold text-center">
                 徹底した安全対策とリスク管理
               </p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`作業員の健康と周辺環境への影響を最小限に抑えるため、\n最新の防護装備と安全手順を採用。\n法令に準拠した厳格なリスク管理体制で、\n安心して工事をお任せいただけます。`}
+              <p className="text-base text-center mt-2 whitespace-pre-line sm:whitespace-normal">
+                {`作業員の健康と周辺環境への影響を\n最小限に抑えるため`}
+              </p>
+              <p className="text-base text-center">
+                {`最新の防護装備と安全手順を採用。`}
+              </p>
+              <p className="text-base text-center">
+                {`法令に準拠した厳格なリスク管理体制で、`}
+              </p>
+              <p className="text-base text-center">
+                {`安心して工事をお任せいただけます。`}
               </p>
             </div>
             <div className="mt-4">
               <p className="text-xl font-bold text-center">
                 高精度な調査・分析技術
               </p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`着工前に専門機器を用いた詳細な調査・分析を実施。\n汚染状況を正確に把握し、\n最適な除去・封じ込め方法を設計することで、\n無駄のない効率的な工事を可能にします。`}
+              <p className="text-base text-center mt-2 whitespace-pre-line sm:whitespace-normal">
+                {`着工前に専門機器を用いた\n詳細な調査・分析を実施。`}
+              </p>
+              <p className="text-base text-center">
+                {`汚染状況を正確に把握し、`}
+              </p>
+              <p className="text-base text-center">
+                {`最適な除去・封じ込め方法を設計することで、`}
+              </p>
+              <p className="text-base text-center">
+                {`無駄のない効率的な工事を可能にします。`}
               </p>
             </div>
             <div>
@@ -187,8 +226,14 @@ export default function OurService() {
             </div>
             <div className="mt-6 lg:mt-12">
               <p className="text-xl font-bold text-center">解体工事</p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`綿密な事前調査と豊富な実績に基づき、\n周辺環境や騒音・粉じん対策に配慮した、\n安全で迅速な解体工事を実施。\n木造からRC造まで幅広く対応可能です。`}
+              <p className="text-base text-center whitespace-pre-line sm:whitespace-normal mt-2">
+                {`綿密な事前調査と豊富な実績に基づき、\n周辺環境や`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line sm:whitespace-normal">
+                {`騒音・粉じん対策に配慮した、\n安全で迅速な解体工事を実施。`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line">
+                {`木造からRC造まで幅広く対応可能です。`}
               </p>
             </div>
             <div className="mt-4">
@@ -199,8 +244,17 @@ export default function OurService() {
             </div>
             <div>
               <p className="mt-4 text-xl font-bold text-center">外構工事</p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`門扉・フェンス・駐車場・植栽など、\n使いやすさと美観を両立した外構プランを提案。\n戸建てから施設・店舗まで、用途に合わせた高品質な\n仕上がりを実現します。`}
+              <p className="text-base text-center mt-2">
+                {`門扉・フェンス・駐車場・植栽など、`}
+              </p>
+              <p className="text-base text-center">
+                {`使いやすさと美観を両立した外構プランを提案。`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line sm:whitespace-normal">
+                {`戸建てから施設・店舗まで、\n用途に合わせた高品質な`}
+              </p>
+              <p className="text-base text-center">
+                {`仕上がりを実現します。`}
               </p>
             </div>
           </div>
