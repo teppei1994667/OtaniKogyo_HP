@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import { JobInformation } from "./component/JobInformation";
+import { AnimationImage } from "../share/component/AnimationImage";
 
 export default function RecruitmentInformation() {
   return (
@@ -34,7 +35,7 @@ export default function RecruitmentInformation() {
       </Grid>
       <Grid container className="mt-8 justify-center">
         <Grid className="w-120">
-          <Image
+          <AnimationImage
             src="/recruitment_image.jpg"
             alt="our service"
             width={5472}
@@ -92,7 +93,7 @@ export default function RecruitmentInformation() {
           </p>
         </Grid>
         <Grid className="w-120 order-first lg:order-none">
-          <Image
+          <AnimationImage
             src="/recruitment_image2.jpg"
             alt="our service"
             width={5472}
