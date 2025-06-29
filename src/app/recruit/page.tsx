@@ -72,7 +72,9 @@ export default function RecruitmentInformation() {
       </Grid>
       <Grid container className="mt-8 justify-center">
         <Grid className="w-132 order-last lg:order-none">
-          <p className="mt-10 text-center font-bold text-xl">アットホーム</p>
+          <p className="mt-4 lg:mt-10 text-center font-bold text-xl">
+            アットホーム
+          </p>
           <p className="mt-6 text-lg text-center">
             {`大谷工業では、社員同士が支え合い、`}
           </p>
