@@ -18,7 +18,7 @@ export default function OurService() {
       <Grid container className="md:-mt-20 xl:h-80 w-full justify-center">
         <Grid className="w-11/12 lg:w-240 bg-white text-center pt-6 sm:pt-8">
           <h1 className="font-bold text-3xl">事業内容</h1>
-          <h1 className="text-base text-blue-400">our service</h1>
+          <h1 className="text-base text-blue-400">our services</h1>
           <h1 className="font-bold text-xl mt-4">
             安全・安心な環境づくりへの挑戦
           </h1>
