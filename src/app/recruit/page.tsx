@@ -23,13 +23,13 @@ export default function RecruitmentInformation() {
             未来を築く仲間を募集しています
           </h1>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
-            {`私たち大谷工業は、\nアスベスト解体工事を通じて安全で快適な環境を\n提供することを使命としています。`}
+            {`私たち大谷工業は、\nアスベスト解体工事を通じて\n安全で快適な環境を\n提供することを使命としています。`}
           </p>
           <p className="text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
-            {`環境保全に貢献しながら、\n地域社会の未来を支える仲間を募集しています。`}
+            {`環境保全に貢献しながら、\n地域社会の未来を支える\n仲間を募集しています。`}
           </p>
           <p className="text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
-            {`未経験者でも安心して働ける\n教育体制を整えていますので、ぜひご応募ください。`}
+            {`未経験者でも安心して働ける\n教育体制を整えていますので、\nぜひご応募ください。`}
           </p>
         </Grid>
       </Grid>

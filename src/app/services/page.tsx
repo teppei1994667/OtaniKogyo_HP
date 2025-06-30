@@ -29,13 +29,13 @@ export default function OurService() {
             {`危険物を安全に管理し、\n未来を担う環境の整備に取り組んでいます。`}
           </p>
           <p className="text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
-            {`最新の技術と厳格な安全基準に基づいた施工で、\nお客様と地域社会に安心と信頼をお届けします。`}
+            {`最新の技術と\n厳格な安全基準に基づいた施工で、\nお客様と地域社会に\n安心と信頼をお届けします。`}
           </p>
           <p className="text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
             {`環境保全と社会貢献を第一に、\n安全で快適な空間作りを目指し、`}
           </p>
           <p className="text-base sm:text-lg whitespace-pre-line lg:whitespace-normal leading-snug sm:leading-normal">
-            {`未来の世代に繋がる確かな基盤を築いています。`}
+            {`未来の世代に繋がる確かな基盤を\n築いています。`}
           </p>
         </Grid>
       </Grid>
@@ -192,8 +192,8 @@ export default function OurService() {
               <p className="mt-4 text-xl font-bold text-center">
                 豊富な実績と専門スタッフ
               </p>
-              <p className="text-base text-center mt-2 whitespace-pre-line">
-                {`多数の現場経験を持つ有資格者が在籍。\n大規模施設での実績も豊富で、\n高度な専門性が求められる現場でも高品質な対応を実現します。`}
+              <p className="text-base text-center mt-2 whitespace-pre-line sm:whitespace-normal">
+                {`多数の現場経験を持つ有資格者が在籍。\n大規模施設での実績も豊富で、\n高度な専門性が求められる現場でも\n高品質な対応を実現します。`}
               </p>
             </div>
           </div>
