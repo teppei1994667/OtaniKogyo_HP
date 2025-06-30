@@ -25,7 +25,7 @@ export const OurWorks = () => {
         </Grid>
         <Grid>
           <Link
-            href="/OurWorks"
+            href="/works"
             className="text-2xl md:text-5xl font-thin text-gray-400 hover:text-gray-50 transition-colors duration-300"
           >{`>>`}</Link>
         </Grid>
