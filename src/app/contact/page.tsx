@@ -3,6 +3,13 @@
 import { Grid } from "@mui/material";
 import { FormProvider, useForm } from "react-hook-form";
 import { FormTextField } from "../share/component/FormTextField";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "お問い合せ",
+  description:
+    "株式会社大谷工業のお問い合わせページでは、アスベスト除去やダイオキシン対策工事に関するご質問やご相談を受け付けています。お気軽にお問い合わせください。",
+};
 
 type ContactFormValues = {
   companyName: string;

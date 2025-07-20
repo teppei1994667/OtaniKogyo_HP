@@ -2,6 +2,13 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import { Contact } from "../share/topPageComponent/Contact";
 import { AnimationImage } from "../share/component/AnimationImage";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "事業内容",
+  description:
+    "株式会社大谷工業の事業内容ページでは、アスベスト除去工事、ダイオキシン類対策工事、解体工事、仮設足場工事、外構工事など、安全・安心を重視した幅広いサービスをご紹介しています。",
+};
 
 export default function OurService() {
   return (

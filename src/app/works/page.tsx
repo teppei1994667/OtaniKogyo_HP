@@ -6,6 +6,13 @@ import { WorkListTable } from "./component/WorkListTabel";
 import { OurWorksList } from "./OurWorksList";
 import { Contact } from "../share/topPageComponent/Contact";
 import { ImageCarousel } from "../share/component/ImageCarousel";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "実績",
+  description:
+    "株式会社大谷工業の実績ページでは、アスベスト除去工事やダイオキシン対策工事を含む過去の施工事例をご紹介しています。安全・安心を提供する高品質な工事の実績をご覧ください。",
+};
 
 export default function OurWorks() {
   const asbestosHeaderList = ["現場名", "場所", "施工内容"];

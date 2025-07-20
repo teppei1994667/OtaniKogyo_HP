@@ -2,6 +2,13 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import { JobInformation } from "./component/JobInformation";
 import { AnimationImage } from "../share/component/AnimationImage";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "採用情報",
+  description:
+    "株式会社大谷工業の採用情報ページでは、アスベスト除去や解体工事などの専門分野で活躍する人材を募集しています。業界経験者から未経験者まで幅広く歓迎します。詳細はこちらをご覧ください。",
+};
 
 export default function RecruitmentInformation() {
   return (
