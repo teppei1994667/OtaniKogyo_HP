@@ -199,8 +199,14 @@ export default function OurService() {
               <p className="mt-4 text-xl font-bold text-center">
                 豊富な実績と専門スタッフ
               </p>
-              <p className="text-base text-center mt-2 whitespace-pre-line sm:whitespace-normal">
-                {`多数の現場経験を持つ有資格者が在籍。\n大規模施設での実績も豊富で、\n高度な専門性が求められる現場でも\n高品質な対応を実現します。`}
+              <p className="text-base text-center mt-2">
+                {`多数の現場経験を持つ有資格者が在籍。`}
+              </p>
+              <p className="text-base text-center ">
+                {`大規模施設での実績も豊富で、`}
+              </p>
+              <p className="text-base text-center whitespace-pre-line sm:whitespace-normal">
+                {`高度な専門性が求められる現場でも\n高品質な対応を実現します。`}
               </p>
             </div>
           </div>
