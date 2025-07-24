@@ -1,5 +1,3 @@
-"use client";
-
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import { WorkListTable } from "./component/WorkListTabel";

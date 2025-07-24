@@ -1,3 +1,5 @@
+"use client";
+
 import { Grid } from "@mui/material";
 import { ContactFormButton } from "../component/ContactFormButton";
 
