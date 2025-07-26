@@ -10,7 +10,19 @@ export const metadata: Metadata = {
     "株式会社大谷工業の事業内容ページでは、アスベスト除去工事、ダイオキシン類対策工事、解体工事、仮設足場工事、外構工事など、安全・安心を重視した幅広いサービスをご紹介しています。",
 };
 
-export default function OurService() {
+export default function Service() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "アスベスト除去工事 | ダイオキシン類対策工事 | 解体工事 | 仮設足場工事 | 外構工事",
+    description:
+      "株式会社大谷工業の事業内容ページでは、アスベスト除去工事、ダイオキシン類対策工事、解体工事、仮設足場工事、外構工事など、安全・安心を重視した幅広いサービスをご紹介しています。",
+    provider: {
+      "@type": "Organization",
+      name: "株式会社大谷工業",
+      url: "https://www.otani-company.com/",
+    },
+  };
   return (
     <>
       <div className="w-full mt-16">
@@ -274,6 +286,10 @@ export default function OurService() {
         </Grid>
       </Grid>
       <Contact />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }
