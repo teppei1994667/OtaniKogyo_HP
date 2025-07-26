@@ -12,7 +12,21 @@ export const metadata: Metadata = {
     "株式会社大谷工業の実績ページでは、アスベスト除去工事やダイオキシン対策工事を含む過去の施工事例をご紹介しています。安全・安心を提供する高品質な工事の実績をご覧ください。",
 };
 
-export default function OurWorks() {
+export default function Works() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Work",
+    name: "施工実績",
+    description:
+      "株式会社大谷工業の実績ページでは、アスベスト除去工事やダイオキシン対策工事を含む過去の施工事例をご紹介しています。安全・安心を提供する高品質な工事の実績をご覧ください。",
+    creator: {
+      "@type": "Organization",
+      name: "株式会社大谷工業",
+    },
+    dateCreated: "2022-10-31",
+  };
+
+  // 施工実績のヘッダーリスト
   const asbestosHeaderList = ["現場名", "場所", "施工内容"];
 
   return (
@@ -46,6 +60,10 @@ export default function OurWorks() {
         workListData={OurWorksList}
       />
       <Contact />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }

@@ -32,6 +32,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "株式会社大谷工業",
+    url: "https://www.otani-company.com/",
+    logo: "https://www.otani-company.com/logo.png",
+  };
   return (
     <>
       <SplashScreen />
@@ -41,6 +48,10 @@ export default function Home() {
       <OurWorks />
       <News />
       <Contact />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }

@@ -19,6 +19,19 @@ type ContactFormValues = {
 };
 
 export default function ContactForm() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactForm",
+    name: "お問い合わせ",
+    url: "https://www.otani-company.com/contact",
+    mainEntity: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      telephone: "+81-6-7654-9938",
+      areaServed: "JP",
+      availableLanguage: ["Japanese"],
+    },
+  };
   const contactForm = useForm<ContactFormValues>({
     defaultValues: {
       companyName: "",
@@ -176,6 +189,10 @@ export default function ContactForm() {
           </Grid>
         </Grid>
       </FormProvider>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }

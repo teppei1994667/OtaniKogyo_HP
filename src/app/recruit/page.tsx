@@ -10,7 +10,34 @@ export const metadata: Metadata = {
     "株式会社大谷工業の採用情報ページでは、アスベスト除去や解体工事などの専門分野で活躍する人材を募集しています。業界経験者から未経験者まで幅広く歓迎します。詳細はこちらをご覧ください。",
 };
 
-export default function RecruitmentInformation() {
+export default function Recruit() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Recruit",
+    title: "現場管理者 | 現場作業員 | 営業職",
+    description:
+      "R株式会社大谷工業の採用情報ページでは、アスベスト除去や解体工事などの専門分野で活躍する人材を募集しています。業界経験者から未経験者まで幅広く歓迎します。詳細はこちらをご覧ください。eactやNext.jsを使ったWebアプリケーション開発。",
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "株式会社大谷工業",
+      sameAs: "https://www.otani-company.com/",
+      logo: "https://www.otani-company.com/logo.png",
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "西成区",
+        addressRegion: "大阪府",
+        addressCountry: "JP",
+        postalCode: "557-0031",
+        streetAddress: "鶴見橋３丁目１−２４",
+      },
+    },
+    employmentType: "FULL_TIME",
+    datePosted: "2025-07-01",
+    validThrough: "2025-12-31",
+  };
   return (
     <>
       <div className="w-full mt-16">
@@ -112,6 +139,10 @@ export default function RecruitmentInformation() {
         </Grid>
       </Grid>
       <JobInformation />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }
