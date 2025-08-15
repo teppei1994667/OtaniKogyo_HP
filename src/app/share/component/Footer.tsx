@@ -1,8 +1,27 @@
+"use client";
+
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import { Menu } from "./Menu";
+import { useEffect, useState } from "react";
+import { MobileFooter } from "./MobileFooter";
 
 export const Footer = () => {
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
   return (
     <footer className="bg-footer text-white py-4 pl-2 md:pl-8 lg:pl-14">
       <Grid container className="ml-5 xl:ml-6">
@@ -32,13 +51,19 @@ export const Footer = () => {
           <Menu drowerMenuVisible={false} />
         </Grid>
       </Grid>
-      <Grid container className="justify-end mt-4">
+      <Grid
+        container
+        className={`justify-end mt-4 ${
+          windowWidth == null || windowWidth <= 640 ? "mb-24" : ""
+        }`}
+      >
         <Grid className="mr-1">
           <h1 className="text-xs xl:text-sm">
             Copyrights © 2024 All Rights Reserved by OTANI Inc.
           </h1>
         </Grid>
       </Grid>
+      {windowWidth == null || windowWidth <= 640 ? <MobileFooter /> : null}
     </footer>
   );
 };
