@@ -31,7 +31,7 @@ export default function Recruit() {
         addressRegion: "大阪府",
         addressCountry: "JP",
         postalCode: "557-0031",
-        streetAddress: "鶴見橋３丁目１−２４",
+        streetAddress: "鶴見橋１丁目９−２",
       },
     },
     employmentType: "FULL_TIME",
