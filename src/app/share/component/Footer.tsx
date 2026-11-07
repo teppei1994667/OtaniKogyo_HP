@@ -42,7 +42,7 @@ export const Footer = () => {
       <Grid container>
         <Grid>
           <h1 className="text-xs lg:text-base font-bold">
-            大阪府大阪市西成区鶴見橋３丁目１−２４
+            大阪府大阪市西成区鶴見橋１丁目９ー２
           </h1>
         </Grid>
       </Grid>
@@ -54,7 +54,7 @@ export const Footer = () => {
       <Grid
         container
         className={`justify-end mt-4 ${
-          windowWidth == null || windowWidth <= 640 ? "mb-24" : ""
+          windowWidth == null || windowWidth <= 640 ? "mb-32" : ""
         }`}
       >
         <Grid className="mr-1">

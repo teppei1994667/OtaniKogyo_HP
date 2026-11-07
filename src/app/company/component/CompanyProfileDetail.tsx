@@ -18,7 +18,7 @@ export const CompanyProfileDetail = () => {
         <Grid className="flex flex-col sm:justify-center bg-gray-200 h-32 sm:h-24 w-5/6 sm:w-3/5 lg:w-144 sm:ml-4 pt-4 sm:pt-0 pl-2">
           <p className="text-lg">【本社】</p>
           <p className="text-lg whitespace-pre-line md:whitespace-normal">
-            {`〒557-0031\n大阪府大阪市西成区鶴見橋３丁目１−２４`}
+            {`〒557-0031\n大阪府大阪市西成区鶴見橋１丁目９ー２`}
           </p>
         </Grid>
       </Grid>
