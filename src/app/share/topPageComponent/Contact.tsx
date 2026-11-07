@@ -28,6 +28,13 @@ export const Contact = () => {
             </h1>
           </Grid>
         </Grid>
+        <Grid container className="justify-center mt-2 mx-4">
+          <Grid>
+            <p className="text-[10px] md:text-sm xl:text-base text-gray-600 whitespace-pre-line text-center">
+              {`※営業・セールス・勧誘を目的としたお電話は固くお断りしております。\nなお、協力会社様からのお問い合わせは随時受け付けております。`}
+            </p>
+          </Grid>
+        </Grid>
         <Grid
           container
           className="justify-between items-center mt-4 mx-8 sm:mx-28 md:mx-48 lg:ml-64 xl:ml-72 2xl:ml-96 pb-4"

@@ -18,7 +18,7 @@ export default function Company() {
     url: "https://www.otani-company.com/",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "大阪府大阪市西成区鶴見橋３丁目１−２４",
+      streetAddress: "大阪府大阪市西成区鶴見橋１丁目９−２",
       postalCode: "557-0031",
       addressLocality: "西成区",
       addressRegion: "大阪府",
