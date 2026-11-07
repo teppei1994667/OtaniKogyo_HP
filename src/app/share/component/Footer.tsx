@@ -42,7 +42,7 @@ export const Footer = () => {
       <Grid container>
         <Grid>
           <h1 className="text-xs lg:text-base font-bold">
-            大阪府大阪市西成区鶴見橋１丁目９ー２
+            大阪府大阪市西成区鶴見橋１丁目９−２
           </h1>
         </Grid>
       </Grid>
