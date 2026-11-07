@@ -60,7 +60,7 @@ export const JobInformation = () => {
           <p className="text-base font-bold">勤務地所在地</p>
         </Grid>
         <Grid className="w-8/12 sm:w-2/5 mt-4 sm:mt-0">
-          <p className="text-base">大阪市西成区鶴見橋3-2-17</p>
+          <p className="text-base">大阪府大阪市西成区鶴見橋１丁目９−２</p>
         </Grid>
       </Grid>
       <BaseBorder />
